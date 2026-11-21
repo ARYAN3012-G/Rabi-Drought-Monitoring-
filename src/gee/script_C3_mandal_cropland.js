@@ -142,7 +142,7 @@ MANDAL_NAMES.forEach(function (nm) {
 // ---- 3. stratified random cropland points + observation-level trajectories -----------------
 var strat = irrigated.updateMask(cropland).toInt();
 var pts = ee.FeatureCollection(MANDALS.map(function (m) {
-  return strat.stratifiedSample({region: m.geometry(), classBand: 'irr', classValues: [0, 1],
+  return strat.stratifiedSample({numPoints: N_RAINFED, region: m.geometry(), classBand: 'irr', classValues: [0, 1],
                                  classPoints: [N_RAINFED, N_IRRIGATED], scale: SCALE, projection: CRS,
                                  seed: SEED, geometries: true})
     .map(function (p) { return p.set('mandal', m.get('mandal')); });
