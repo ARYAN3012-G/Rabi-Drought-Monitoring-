@@ -31,3 +31,23 @@ Comparisons with the 2023-24 and 2024-25 declarations are retrospective developm
 independent tests. The registered R1/R2 test of the kharif project runs unchanged alongside.
 
 "Candidate" = winter vegetation activity; crop type and sowing date are not verified.
+
+## Status (21 Nov 2026)
+- Fields frozen: `data/frozen/fields_v1.csv` (233 fields; asset `rabi_candidates_v2`). Audit: `results/audit/v1`, `v2`
+  (the v2 part-1 "sampled" counts use the GeoJSON flag, which differs from the asset at Ped/Pul - see protocol).
+- **Protocol v1** frozen: `docs/PROTOCOL_v1.md` (commit b266217), code `src/rabi/protocol.py`, tests `tests/`.
+- Development check (retrospective): `results/dev_check/DEV_CHECK.md` - severe 1/5, not-declared 5/10 flagged
+  at 15 Feb; the rule does not reproduce the 2023-26 declarations. Rules unchanged.
+
+## Season calendar 2026-27 (all laptop work, no lab runs)
+| When | Who | What |
+|---|---|---|
+| ~8 Dec 2026 | laptop | weather module: `python tools/update_agera5.py` then prepare_data (Sep-Nov rain for the wet guard) |
+| 1 Jan, 15 Jan, 1 Feb, **15 Feb**, 1 Mar, **15 Mar** 2027 | Earth Engine (you) | rerun script C2 (VERSION 'v2'), download `C2_candidate_timeseries_v2.csv` |
+| same days | laptop | `python src/rabi/monitor.py --date <day>` then commit `results/monitor/<day>/` the same day |
+| after the AP rabi 2026-27 order (~end Mar 2027) | laptop | score 15 Feb (primary) and 15 Mar against the order; also score R1/R2 in the satellite repo |
+
+    python src/rabi/freeze_fields.py      # (already done) frozen list
+    python src/rabi/dev_check.py          # development check 2023-26
+    python src/rabi/monitor.py --date 2027-02-15
+    python -m pytest tests                # set PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 on the laptop
