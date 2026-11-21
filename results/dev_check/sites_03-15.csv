@@ -1,0 +1,57 @@
+season,site_code,status,valid_units,flagged_by,wet_delay,mandal
+2019,Bal,OK,"irrigated, rainfed",,,Kurnool Urban
+2019,Cho,OK,irrigated,,,Lepakshi
+2019,Din,OK,irrigated,,,Kurnool Rural
+2019,Lep,FLAG,irrigated,irrigated: establishment,,Lepakshi
+2019,Ped,OK,"irrigated, rainfed",,rainfed,Adoni
+2019,Pul,OK,"irrigated, rainfed",,,Kurnool Urban
+2019,Sira,FLAG,irrigated,irrigated: establishment,,Sira taluk
+2019,Som,OK,irrigated,,,Somandepalli
+2020,Bal,OK,"irrigated, rainfed",,,Kurnool Urban
+2020,Cho,OK,irrigated,,,Lepakshi
+2020,Din,OK,irrigated,,,Kurnool Rural
+2020,Lep,OK,irrigated,,,Lepakshi
+2020,Ped,OK,"irrigated, rainfed",,,Adoni
+2020,Pul,OK,"irrigated, rainfed",,,Kurnool Urban
+2020,Sira,OK,irrigated,,,Sira taluk
+2020,Som,OK,irrigated,,,Somandepalli
+2021,Bal,OK,"irrigated, rainfed",,,Kurnool Urban
+2021,Cho,OK,irrigated,,,Lepakshi
+2021,Din,OK,irrigated,,,Kurnool Rural
+2021,Lep,OK,irrigated,,,Lepakshi
+2021,Ped,OK,"irrigated, rainfed",,,Adoni
+2021,Pul,OK,"irrigated, rainfed",,,Kurnool Urban
+2021,Sira,OK,irrigated,,,Sira taluk
+2021,Som,OK,irrigated,,,Somandepalli
+2022,Bal,OK,"irrigated, rainfed",,,Kurnool Urban
+2022,Cho,OK,irrigated,,,Lepakshi
+2022,Din,OK,irrigated,,,Kurnool Rural
+2022,Lep,OK,irrigated,,,Lepakshi
+2022,Ped,OK,"irrigated, rainfed",,,Adoni
+2022,Pul,OK,"irrigated, rainfed",,,Kurnool Urban
+2022,Sira,OK,irrigated,,,Sira taluk
+2022,Som,OK,irrigated,,,Somandepalli
+2023,Bal,OK,"irrigated, rainfed",,,Kurnool Urban
+2023,Cho,OK,irrigated,,,Lepakshi
+2023,Din,OK,irrigated,,,Kurnool Rural
+2023,Lep,OK,irrigated,,,Lepakshi
+2023,Ped,FLAG,"irrigated, rainfed",irrigated: establishment,,Adoni
+2023,Pul,OK,"irrigated, rainfed",,,Kurnool Urban
+2023,Sira,OK,irrigated,,,Sira taluk
+2023,Som,FLAG,irrigated,irrigated: establishment,,Somandepalli
+2024,Bal,OK,"irrigated, rainfed",,,Kurnool Urban
+2024,Cho,OK,irrigated,,,Lepakshi
+2024,Din,OK,irrigated,,,Kurnool Rural
+2024,Lep,FLAG,irrigated,irrigated: establishment,,Lepakshi
+2024,Ped,OK,"irrigated, rainfed",,,Adoni
+2024,Pul,OK,"irrigated, rainfed",,,Kurnool Urban
+2024,Sira,FLAG,irrigated,irrigated: establishment,,Sira taluk
+2024,Som,OK,irrigated,,,Somandepalli
+2025,Bal,FLAG,"irrigated, rainfed",rainfed: establishment,,Kurnool Urban
+2025,Cho,FLAG,irrigated,irrigated: establishment,,Lepakshi
+2025,Din,OK,irrigated,,,Kurnool Rural
+2025,Lep,OK,irrigated,,,Lepakshi
+2025,Ped,FLAG,"irrigated, rainfed",irrigated: establishment,,Adoni
+2025,Pul,FLAG,"irrigated, rainfed",irrigated: establishment,,Kurnool Urban
+2025,Sira,FLAG,irrigated,irrigated: establishment,,Sira taluk
+2025,Som,FLAG,irrigated,irrigated: establishment,,Somandepalli
