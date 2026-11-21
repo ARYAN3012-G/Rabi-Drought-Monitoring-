@@ -51,3 +51,11 @@ independent tests. The registered R1/R2 test of the kharif project runs unchange
     python src/rabi/dev_check.py          # development check 2023-26
     python src/rabi/monitor.py --date 2027-02-15
     python -m pytest tests                # set PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 on the laptop
+
+## Revised rabi design (21 Nov 2026, in progress - not yet frozen)
+Rabi crops use water stored before the season (Oct-Dec rain, soil, tanks, borewells), so the rabi module is built
+around (1) water availability, (2) vegetation establishment over the WHOLE mandal's cropland (fixed denominator,
+so empty land counts), (3) crop development (early decline, a candidate terminal-stress indicator) and
+(4) validation (field evidence; government orders as an administrative comparison, not a tuning target).
+Step 1 = `src/gee/script_C3_mandal_cropland.js` (data preparation, rabi 2019-20 .. 2025-26 only; 2026-27 not read).
+R1/R2 (satellite repo) and protocol v1 stay unchanged. New rules are registered before rabi 2026-27 outcomes are seen.
