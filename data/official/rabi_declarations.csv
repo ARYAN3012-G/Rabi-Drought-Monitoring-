@@ -1,0 +1,25 @@
+site_code,mandal,district,season,year,status,source,note,order_date
+Bal,Kurnool Urban (likely),Kurnool,rabi,2023,Severe,"G.O.Ms.No.7 Revenue (DM.II) 16-03-2024, Rabi 2023-24 (87 mandals)",,2024-03-16
+Bal,Kurnool Urban (likely),Kurnool,rabi,2024,Severe,"G.O.Ms.No.3 Revenue (DM.II) 31-03-2025, Rabi 2024-25 (51 mandals)",,2025-03-31
+Bal,Kurnool Urban (likely),Kurnool,rabi,2025,Not declared,"G.O.Ms.No.1 Revenue (DM.II) 31-03-2026, Rabi 2025-26 (5 mandals, Markapuram only)",,2026-03-31
+Cho,Lepakshi,Sri Sathya Sai,rabi,2023,Not declared,"G.O.Ms.No.7 Revenue (DM.II) 16-03-2024, Rabi 2023-24 (87 mandals)","Sri Sathya Sai rabi list: 2023-24 Roddam; 2024-25 Roddam, Tanakal",2024-03-16
+Cho,Lepakshi,Sri Sathya Sai,rabi,2024,Not declared,"G.O.Ms.No.3 Revenue (DM.II) 31-03-2025, Rabi 2024-25 (51 mandals)","Sri Sathya Sai rabi list: 2023-24 Roddam; 2024-25 Roddam, Tanakal",2025-03-31
+Cho,Lepakshi,Sri Sathya Sai,rabi,2025,Not declared,"G.O.Ms.No.1 Revenue (DM.II) 31-03-2026, Rabi 2025-26 (5 mandals, Markapuram only)",,2026-03-31
+Din,Kurnool Rural,Kurnool,rabi,2023,Severe,"G.O.Ms.No.7 Revenue (DM.II) 16-03-2024, Rabi 2023-24 (87 mandals)",,2024-03-16
+Din,Kurnool Rural,Kurnool,rabi,2024,Severe,"G.O.Ms.No.3 Revenue (DM.II) 31-03-2025, Rabi 2024-25 (51 mandals)",,2025-03-31
+Din,Kurnool Rural,Kurnool,rabi,2025,Not declared,"G.O.Ms.No.1 Revenue (DM.II) 31-03-2026, Rabi 2025-26 (5 mandals, Markapuram only)",,2026-03-31
+Lep,Lepakshi,Sri Sathya Sai,rabi,2023,Not declared,"G.O.Ms.No.7 Revenue (DM.II) 16-03-2024, Rabi 2023-24 (87 mandals)","Sri Sathya Sai rabi list: 2023-24 Roddam; 2024-25 Roddam, Tanakal",2024-03-16
+Lep,Lepakshi,Sri Sathya Sai,rabi,2024,Not declared,"G.O.Ms.No.3 Revenue (DM.II) 31-03-2025, Rabi 2024-25 (51 mandals)","Sri Sathya Sai rabi list: 2023-24 Roddam; 2024-25 Roddam, Tanakal",2025-03-31
+Lep,Lepakshi,Sri Sathya Sai,rabi,2025,Not declared,"G.O.Ms.No.1 Revenue (DM.II) 31-03-2026, Rabi 2025-26 (5 mandals, Markapuram only)",,2026-03-31
+Ped,Adoni / Peddakadubur border,Kurnool,rabi,2023,Severe (Adoni) / Not declared (Peddakadubur),"G.O.Ms.No.7 Revenue (DM.II) 16-03-2024, Rabi 2023-24 (87 mandals)",,2024-03-16
+Ped,Adoni / Peddakadubur border,Kurnool,rabi,2024,Not declared,"G.O.Ms.No.3 Revenue (DM.II) 31-03-2025, Rabi 2024-25 (51 mandals)",neither Adoni nor Peddakadubur listed,2025-03-31
+Ped,Adoni / Peddakadubur border,Kurnool,rabi,2025,Not declared,"G.O.Ms.No.1 Revenue (DM.II) 31-03-2026, Rabi 2025-26 (5 mandals, Markapuram only)",,2026-03-31
+Pul,Kurnool Urban (likely),Kurnool,rabi,2023,Severe,"G.O.Ms.No.7 Revenue (DM.II) 16-03-2024, Rabi 2023-24 (87 mandals)",,2024-03-16
+Pul,Kurnool Urban (likely),Kurnool,rabi,2024,Severe,"G.O.Ms.No.3 Revenue (DM.II) 31-03-2025, Rabi 2024-25 (51 mandals)",,2025-03-31
+Pul,Kurnool Urban (likely),Kurnool,rabi,2025,Not declared,"G.O.Ms.No.1 Revenue (DM.II) 31-03-2026, Rabi 2025-26 (5 mandals, Markapuram only)",,2026-03-31
+Sira,Sira taluk,Tumakuru (Karnataka),rabi,2023,Unknown,"G.O.Ms.No.7 Revenue (DM.II) 16-03-2024, Rabi 2023-24 (87 mandals)",Karnataka rabi lists not checked,2024-03-16
+Sira,Sira taluk,Tumakuru (Karnataka),rabi,2024,Unknown,"G.O.Ms.No.3 Revenue (DM.II) 31-03-2025, Rabi 2024-25 (51 mandals)",Karnataka rabi lists not checked,2025-03-31
+Sira,Sira taluk,Tumakuru (Karnataka),rabi,2025,Unknown,"G.O.Ms.No.1 Revenue (DM.II) 31-03-2026, Rabi 2025-26 (5 mandals, Markapuram only)",Karnataka rabi lists not checked,2026-03-31
+Som,Somandepalli,Sri Sathya Sai,rabi,2023,Not declared,"G.O.Ms.No.7 Revenue (DM.II) 16-03-2024, Rabi 2023-24 (87 mandals)","Sri Sathya Sai rabi list: 2023-24 Roddam; 2024-25 Roddam, Tanakal",2024-03-16
+Som,Somandepalli,Sri Sathya Sai,rabi,2024,Not declared,"G.O.Ms.No.3 Revenue (DM.II) 31-03-2025, Rabi 2024-25 (51 mandals)","Sri Sathya Sai rabi list: 2023-24 Roddam; 2024-25 Roddam, Tanakal",2025-03-31
+Som,Somandepalli,Sri Sathya Sai,rabi,2025,Not declared,"G.O.Ms.No.1 Revenue (DM.II) 31-03-2026, Rabi 2025-26 (5 mandals, Markapuram only)",,2026-03-31
