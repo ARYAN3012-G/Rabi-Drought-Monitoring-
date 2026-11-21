@@ -55,7 +55,10 @@ WET_GUARD = 1.5                                 # Sep-Nov rain > 150 % of 1979-2
 PRIMARY_NOTE = "15 Feb = primary (scored), 15 Mar = secondary (scored), 15 Jan = informational"
 SEASON_MONTHS = [10, 11, 12, 1, 2, 3, 4]
 SITE_MANDAL = {"Som": "Somandepalli", "Lep": "Lepakshi", "Cho": "Lepakshi", "Sira": "Sira taluk",
-               "Ped": "Adoni", "Din": "Kurnool Rural", "Bal": "Kurnool Urban", "Pul": "Kurnool Urban"}
+               "Ped": "Adoni / Pedda Kadubur", "Din": "Kurnool Rural", "Bal": "Kurnool Urban", "Pul": "Kurnool Urban"}
+# Amendment A1 (21 Nov 2026, before the season, after the mandal boundary check
+# Sentinel2-Drought-Confirmation/results/qc/MANDAL_CHECK.md): 25 of Ped's 40 rabi fields lie in Pedda Kadubur,
+# 15 in Adoni. Ped is scored only when both mandals have the same official status; otherwise "Ambiguous".
 SITES = ["Som", "Lep", "Cho", "Sira", "Ped", "Din", "Bal", "Pul"]
 
 

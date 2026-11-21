@@ -67,11 +67,11 @@ Season y runs from 1 October y to 30 April y+1.
 | Som | Somandepalli |
 | Lep, Cho | Lepakshi |
 | Sira | Sira taluk |
-| Ped | Adoni |
+| Ped | Adoni / Pedda Kadubur (amendment A1) |
 | Din | Kurnool Rural |
 | Bal, Pul | Kurnool Urban |
 
-Ped's pin lies on the Adoni side of the Adoni / Peddakadubur border.
+Ped's pin lies on the Adoni side of the Adoni / Pedda Kadubur border, but most of its fields lie in Pedda Kadubur (amendment A1).
 
 ## 5. Issue dates and scoring
 
@@ -96,3 +96,14 @@ Ped's pin lies on the Adoni side of the Adoni / Peddakadubur border.
 - **The development check** on 2023-24 – 2025-26 (`results/dev_check/DEV_CHECK.md`) describes the rule. Those seasons were known while the project was designed, so it is **not** evidence that the rule works.
 - **Reference false-flag background** (2019–2022, leave-one-season-out, with the wet guard): 2 of 44 units flagged at 15 Feb, 2 of 44 at 15 Mar.
 - **Independence:** the registered R1/R2 test of the kharif project (`Sentinel2-Drought-Confirmation/docs/PREREGISTRATION_rabi_2026-27.md`) runs unchanged and is scored separately.
+
+## Amendment A1 (21 November 2026, before rabi 2026-27; scoring only)
+A boundary check against official sub-district polygons (geoBoundaries IND ADM3, lgdirectory.gov.in 2018;
+`Sentinel2-Drought-Confirmation/results/qc/MANDAL_CHECK.md`) found that Ped's centre lies in Adoni but 25 of its
+40 rabi fields lie in **Pedda Kadubur** (15 in Adoni). Ped is therefore scored only when Adoni and Pedda Kadubur
+have the **same** official status; otherwise it is reported as "Ambiguous" and not counted (as in the kharif
+replay). Detection rules, fields and thresholds are unchanged. The amendment lowers the development-check result
+(severe 1/5 → 0/4), so it is not chosen to improve it.
+Other findings of the check (no change): Lep 16 of 23 rabi fields in Lepakshi, 7 in Chilamathur; Sira 15 of 24
+in Sira, 9 in Agali (Andhra Pradesh); Som, Cho all inside their mandal; Din, Bal, Pul all inside the pre-2022
+Kurnool mandal (the 2018 polygons cannot separate Kurnool Urban from Kurnool Rural).

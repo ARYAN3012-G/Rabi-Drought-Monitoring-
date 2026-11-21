@@ -36,8 +36,8 @@ independent tests. The registered R1/R2 test of the kharif project runs unchange
 - Fields frozen: `data/frozen/fields_v1.csv` (233 fields; asset `rabi_candidates_v2`). Audit: `results/audit/v1`, `v2`
   (the v2 part-1 "sampled" counts use the GeoJSON flag, which differs from the asset at Ped/Pul - see protocol).
 - **Protocol v1** frozen: `docs/PROTOCOL_v1.md` (commit b266217), code `src/rabi/protocol.py`, tests `tests/`.
-- Development check (retrospective): `results/dev_check/DEV_CHECK.md` - severe 1/5, not-declared 5/10 flagged
-  at 15 Feb; the rule does not reproduce the 2023-26 declarations. Rules unchanged.
+- Development check (retrospective): `results/dev_check/DEV_CHECK.md` - severe 0/4, not-declared 5/10 flagged
+  at 15 Feb (scoring amendment A1 for Ped); the rule does not reproduce the 2023-26 declarations. Detection rules unchanged.
 
 ## Season calendar 2026-27 (all laptop work, no lab runs)
 | When | Who | What |

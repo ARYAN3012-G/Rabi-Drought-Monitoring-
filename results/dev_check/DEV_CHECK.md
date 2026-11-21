@@ -1,18 +1,20 @@
 # Protocol v1 - development check (retrospective, NOT a test)
 
-## Summary (written after the check; rules were NOT changed afterwards)
-- **15 Feb (primary):** severe mandal-seasons flagged **1/5** (Adoni 2023-24); not-declared flagged **5/10**
-  (4 of them in 2025-26). 15 Mar: 1/5 and 6/10. The rule does **not** reproduce the AP rabi declarations.
+## Summary (written after the check; detection rules were NOT changed afterwards)
+- Scoring follows amendment A1 (Ped counts only when Adoni and Pedda Kadubur have the same status), so
+  2023-24 Ped (Adoni Severe, Pedda Kadubur not declared) is 'Ambiguous' and not counted.
+  Before A1 the 15 Feb result was severe 1/5 (that one hit was Adoni 2023-24).
+- **15 Feb (primary):** severe mandal-seasons flagged **0/4**; not-declared flagged **5/10** (4 of them in 2025-26).
+  15 Mar: 0/4 and 6/10. The rule does **not** reproduce the AP rabi declarations.
 - **Kurnool 2023-24 and 2024-25 (declared Severe):** sowing and greenness of the rabi-crop fields were at or
-  above normal on 15 Feb and 15 Mar (e.g. Bal rainfed 82-88 % established vs normal 78 %).
-  Same as in the kharif project's audit: the 2024-25 Kurnool declaration is not supported by rain or images.
-- **2025-26 (declared only in Markapuram):** fewer fields sown at several sites (e.g. Ped irrigated 35 % vs
-  74 % normal, Som irrigated 25 % vs 47 %), consistent with almost no Dec-Feb rain in Kurnool (4-11 % of
-  normal, AgERA5) - a real dry signal without a declaration.
-- Reading: on these 3 seasons, field-level rabi crop activity and the administrative rabi declarations
-  disagree. Possible reasons: declarations use other criteria (Oct-Dec rainfall deficit, kharif carry-over,
-  crop-cutting / sown-area reports for the whole mandal), our 3 km sites are small parts of a mandal, and
-  irrigated rabi fields are buffered by wells/tanks. Rabi 2026-27 is scored with the unchanged rules.
+  above normal (e.g. Bal rainfed 82-88 % established vs normal 78 %). As in the kharif project's audit, the
+  2024-25 Kurnool declaration is not supported by rain or images.
+- **2025-26 (declared only in Markapuram):** fewer fields sown at several sites (e.g. Ped irrigated 35 % vs 74 %
+  normal, Som irrigated 25 % vs 47 %), consistent with almost no Dec-Feb rain in Kurnool (4-11 % of normal).
+- Reading: on these seasons field-level rabi crop activity and the administrative rabi declarations disagree.
+  Possible reasons: declarations use other criteria (Oct-Dec rainfall deficit, kharif carry-over, mandal-wide
+  sown-area reports), our 3 km sites are small parts of a mandal, irrigated rabi fields are buffered by
+  wells/tanks. Rabi 2026-27 is scored with the unchanged rules.
 
 
 Rules: docs/PROTOCOL_v1.md (src/rabi/protocol.py), frozen before this check was run. Reference seasons 2019-22 are scored leave-one-season-out (no declarations: shown as the false-flag background). 2023-24 .. 2025-26 were known while designing the project.
@@ -23,25 +25,25 @@ Reference seasons: 10 of 43 valid site-class units flagged (7 wet-delay).
 
 | official | mandal_seasons | insufficient | flagged |
 |---|---|---|---|
-| Severe | 5 | 0 | 1/5 |
+| Severe | 4 | 0 | 1/4 |
 | Moderate | 0 | 0 | 0/0 |
 | Not declared | 10 | 0 | 5/10 |
 
 | season | mandal | official | order_date | issue | status | sites |
 |---|---|---|---|---|---|---|
-| 2023 | Adoni | Severe | 2024-03-16 | 2024-01-15 | OK | Ped:OK |
+| 2023 | Adoni / Pedda Kadubur | Ambiguous | 2024-03-16 | 2024-01-15 | OK | Ped:OK |
 | 2023 | Kurnool Rural | Severe | 2024-03-16 | 2024-01-15 | OK | Din:OK |
 | 2023 | Kurnool Urban | Severe | 2024-03-16 | 2024-01-15 | FLAG | Bal:FLAG, Pul:FLAG |
 | 2023 | Lepakshi | Not declared | 2024-03-16 | 2024-01-15 | OK | Cho:OK, Lep:OK |
 | 2023 | Sira taluk | Unknown | 2024-03-16 | 2024-01-15 | OK | Sira:OK |
 | 2023 | Somandepalli | Not declared | 2024-03-16 | 2024-01-15 | FLAG | Som:FLAG |
-| 2024 | Adoni | Not declared | 2025-03-31 | 2025-01-15 | OK | Ped:OK |
+| 2024 | Adoni / Pedda Kadubur | Not declared | 2025-03-31 | 2025-01-15 | OK | Ped:OK |
 | 2024 | Kurnool Rural | Severe | 2025-03-31 | 2025-01-15 | OK | Din:OK |
 | 2024 | Kurnool Urban | Severe | 2025-03-31 | 2025-01-15 | OK | Bal:OK, Pul:OK |
 | 2024 | Lepakshi | Not declared | 2025-03-31 | 2025-01-15 | OK | Cho:OK, Lep:OK |
 | 2024 | Sira taluk | Unknown | 2025-03-31 | 2025-01-15 | FLAG | Sira:FLAG |
 | 2024 | Somandepalli | Not declared | 2025-03-31 | 2025-01-15 | OK | Som:OK |
-| 2025 | Adoni | Not declared | 2026-03-31 | 2026-01-15 | OK | Ped:OK |
+| 2025 | Adoni / Pedda Kadubur | Not declared | 2026-03-31 | 2026-01-15 | OK | Ped:OK |
 | 2025 | Kurnool Rural | Not declared | 2026-03-31 | 2026-01-15 | FLAG | Din:FLAG |
 | 2025 | Kurnool Urban | Not declared | 2026-03-31 | 2026-01-15 | FLAG | Bal:FLAG, Pul:FLAG |
 | 2025 | Lepakshi | Not declared | 2026-03-31 | 2026-01-15 | FLAG | Cho:FLAG, Lep:OK |
@@ -92,25 +94,25 @@ Reference seasons: 2 of 44 valid site-class units flagged (4 wet-delay).
 
 | official | mandal_seasons | insufficient | flagged |
 |---|---|---|---|
-| Severe | 5 | 0 | 1/5 |
+| Severe | 4 | 0 | 0/4 |
 | Moderate | 0 | 0 | 0/0 |
 | Not declared | 10 | 0 | 5/10 |
 
 | season | mandal | official | order_date | issue | status | sites |
 |---|---|---|---|---|---|---|
-| 2023 | Adoni | Severe | 2024-03-16 | 2024-02-15 | FLAG | Ped:FLAG |
+| 2023 | Adoni / Pedda Kadubur | Ambiguous | 2024-03-16 | 2024-02-15 | FLAG | Ped:FLAG |
 | 2023 | Kurnool Rural | Severe | 2024-03-16 | 2024-02-15 | OK | Din:OK |
 | 2023 | Kurnool Urban | Severe | 2024-03-16 | 2024-02-15 | OK | Bal:OK, Pul:OK |
 | 2023 | Lepakshi | Not declared | 2024-03-16 | 2024-02-15 | OK | Cho:OK, Lep:OK |
 | 2023 | Sira taluk | Unknown | 2024-03-16 | 2024-02-15 | OK | Sira:OK |
 | 2023 | Somandepalli | Not declared | 2024-03-16 | 2024-02-15 | FLAG | Som:FLAG |
-| 2024 | Adoni | Not declared | 2025-03-31 | 2025-02-15 | OK | Ped:OK |
+| 2024 | Adoni / Pedda Kadubur | Not declared | 2025-03-31 | 2025-02-15 | OK | Ped:OK |
 | 2024 | Kurnool Rural | Severe | 2025-03-31 | 2025-02-15 | OK | Din:OK |
 | 2024 | Kurnool Urban | Severe | 2025-03-31 | 2025-02-15 | OK | Bal:OK, Pul:OK |
 | 2024 | Lepakshi | Not declared | 2025-03-31 | 2025-02-15 | OK | Cho:OK, Lep:OK |
 | 2024 | Sira taluk | Unknown | 2025-03-31 | 2025-02-15 | FLAG | Sira:FLAG |
 | 2024 | Somandepalli | Not declared | 2025-03-31 | 2025-02-15 | OK | Som:OK |
-| 2025 | Adoni | Not declared | 2026-03-31 | 2026-02-15 | FLAG | Ped:FLAG |
+| 2025 | Adoni / Pedda Kadubur | Not declared | 2026-03-31 | 2026-02-15 | FLAG | Ped:FLAG |
 | 2025 | Kurnool Rural | Not declared | 2026-03-31 | 2026-02-15 | OK | Din:OK |
 | 2025 | Kurnool Urban | Not declared | 2026-03-31 | 2026-02-15 | FLAG | Bal:FLAG, Pul:OK |
 | 2025 | Lepakshi | Not declared | 2026-03-31 | 2026-02-15 | FLAG | Cho:FLAG, Lep:OK |
@@ -161,25 +163,25 @@ Reference seasons: 2 of 44 valid site-class units flagged (1 wet-delay).
 
 | official | mandal_seasons | insufficient | flagged |
 |---|---|---|---|
-| Severe | 5 | 0 | 1/5 |
+| Severe | 4 | 0 | 0/4 |
 | Moderate | 0 | 0 | 0/0 |
 | Not declared | 10 | 0 | 6/10 |
 
 | season | mandal | official | order_date | issue | status | sites |
 |---|---|---|---|---|---|---|
-| 2023 | Adoni | Severe | 2024-03-16 | 2024-03-15 | FLAG | Ped:FLAG |
+| 2023 | Adoni / Pedda Kadubur | Ambiguous | 2024-03-16 | 2024-03-15 | FLAG | Ped:FLAG |
 | 2023 | Kurnool Rural | Severe | 2024-03-16 | 2024-03-15 | OK | Din:OK |
 | 2023 | Kurnool Urban | Severe | 2024-03-16 | 2024-03-15 | OK | Bal:OK, Pul:OK |
 | 2023 | Lepakshi | Not declared | 2024-03-16 | 2024-03-15 | OK | Cho:OK, Lep:OK |
 | 2023 | Sira taluk | Unknown | 2024-03-16 | 2024-03-15 | OK | Sira:OK |
 | 2023 | Somandepalli | Not declared | 2024-03-16 | 2024-03-15 | FLAG | Som:FLAG |
-| 2024 | Adoni | Not declared | 2025-03-31 | 2025-03-15 | OK | Ped:OK |
+| 2024 | Adoni / Pedda Kadubur | Not declared | 2025-03-31 | 2025-03-15 | OK | Ped:OK |
 | 2024 | Kurnool Rural | Severe | 2025-03-31 | 2025-03-15 | OK | Din:OK |
 | 2024 | Kurnool Urban | Severe | 2025-03-31 | 2025-03-15 | OK | Bal:OK, Pul:OK |
 | 2024 | Lepakshi | Not declared | 2025-03-31 | 2025-03-15 | FLAG | Cho:OK, Lep:FLAG |
 | 2024 | Sira taluk | Unknown | 2025-03-31 | 2025-03-15 | FLAG | Sira:FLAG |
 | 2024 | Somandepalli | Not declared | 2025-03-31 | 2025-03-15 | OK | Som:OK |
-| 2025 | Adoni | Not declared | 2026-03-31 | 2026-03-15 | FLAG | Ped:FLAG |
+| 2025 | Adoni / Pedda Kadubur | Not declared | 2026-03-31 | 2026-03-15 | FLAG | Ped:FLAG |
 | 2025 | Kurnool Rural | Not declared | 2026-03-31 | 2026-03-15 | OK | Din:OK |
 | 2025 | Kurnool Urban | Not declared | 2026-03-31 | 2026-03-15 | FLAG | Bal:FLAG, Pul:FLAG |
 | 2025 | Lepakshi | Not declared | 2026-03-31 | 2026-03-15 | FLAG | Cho:FLAG, Lep:OK |

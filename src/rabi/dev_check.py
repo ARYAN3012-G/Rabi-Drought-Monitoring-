@@ -8,7 +8,6 @@ Writes results/dev_check/{units,sites,mandals}_<issue>.csv and DEV_CHECK.md
 """
 from __future__ import annotations
 
-import re
 
 import pandas as pd
 
@@ -24,9 +23,8 @@ def outcomes() -> pd.DataFrame:
     rows = []
     for r in d.itertuples():
         st = r.status
-        if r.site_code == "Ped":                      # pin on the Adoni side of the border
-            m = re.search(r"(Severe|Moderate|Not declared) \(Adoni\)", st)
-            st = m.group(1) if m else st
+        if r.site_code == "Ped" and "(" in st:        # amendment A1: both mandals must agree
+            st = "Ambiguous"
         rows.append(dict(season=r.year, mandal=P.SITE_MANDAL[r.site_code], official=st, order_date=r.order_date))
     return pd.DataFrame(rows).drop_duplicates(["season", "mandal"])
 
