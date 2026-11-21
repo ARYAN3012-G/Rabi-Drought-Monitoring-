@@ -1,7 +1,7 @@
 // =============================================================================
 // SCRIPT C2 — Sentinel-2 time series of the sampled winter-active candidates (rabi project)
 // Needs the asset rabi_candidates_v1 written by script C1 (Assets tab: wait until it appears).
-// Paste into https://code.earthengine.google.com, press Run, Tasks tab -> RUN C2_candidate_timeseries.
+// Paste into https://code.earthengine.google.com, press Run, Tasks tab -> RUN C2_candidate_timeseries_<VERSION>.
 // Re-run during the season (Dec 2026 - Mar 2027) to add new images: END is far in the future, so
 // every run simply contains all images available on that day.
 // =============================================================================
@@ -16,7 +16,8 @@ var START = '2019-10-01', END = '2027-06-01';
 var CLOUD_CS = 0.60;
 var CRS = 'EPSG:32643', SCALE = 10;
 
-var FIELDS = ee.FeatureCollection(ASSET_ROOT + '/rabi_candidates_v1');
+var VERSION = 'v2';             // which C1 asset: 'v1' (first run) or 'v2' (rise rule)
+var FIELDS = ee.FeatureCollection(ASSET_ROOT + '/rabi_candidates_' + VERSION);
 var AOI = FIELDS.geometry().bounds();
 
 var CSP = ee.ImageCollection('GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED');
@@ -53,12 +54,12 @@ var ts = S2.map(function (img) {
 var COLS = ['date', 'tile', 'scene_cloud_pct', 'field_id', 'site', 'site_code', 'irrigated',
             'area_ha', 'pixels', 'NDVI_count'];
 BANDS.forEach(function (b) { COLS.push(b + '_mean'); });
-Export.table.toDrive({collection: ts, description: 'C2_candidate_timeseries', folder: 'drought_rabi',
-  fileNamePrefix: 'C2_candidate_timeseries', fileFormat: 'CSV', selectors: COLS});
+Export.table.toDrive({collection: ts, description: 'C2_candidate_timeseries_' + VERSION, folder: 'drought_rabi',
+  fileNamePrefix: 'C2_candidate_timeseries_' + VERSION, fileFormat: 'CSV', selectors: COLS});
 
 print('Sampled candidate fields:', FIELDS.size());
 print('Per site and class:', FIELDS.aggregate_histogram('site_code'),
       FIELDS.aggregate_histogram('irrigated'));
 Map.addLayer(FIELDS, {color: 'ff8800'}, 'Sampled winter-active candidates');
 Map.centerObject(FIELDS, 9);
-print('Next: Tasks tab -> RUN C2_candidate_timeseries.');
+print('Next: Tasks tab -> RUN C2_candidate_timeseries_<VERSION>.');

@@ -12,6 +12,9 @@ historically green in winter.
 ## Steps
 1. **Script C1** (Earth Engine): historically winter-active *candidate* fields, chosen on the reference
    seasons 2019-20 .. 2022-23 only; rainfed and irrigated kept separate; selection reasons exported.
+   **v1 audit (2026-11-21, results/audit/v1):** in v1, 58 % of rainfed candidate field-seasons were late
+   kharif crops drying through the winter. **Script C1 v2** (`script_C1v2_rabi_candidates.js`) adds a RISE
+   rule (Jan-Mar monthly peak minus Oct-Dec monthly trough >= 0.15), still on the reference seasons only.
 2. **Script C2** (Earth Engine): Sentinel-2 series of the sampled candidates, Oct 2019 onwards.
 3. **Candidate audit** (Python): October - April curves and images of a sample of candidates; lock the
    field list (frozen IDs).

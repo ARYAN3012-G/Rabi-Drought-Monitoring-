@@ -1,7 +1,7 @@
 """
 Candidate audit, part 1: what script C1 selected (from its exports only, no new data).
 
-    python src/audit/candidates_summary.py
+    python src/audit/candidates_summary.py [v1|v2]
 Reads  data/gee_exports/C1_stats.csv, C1_candidates_<site>.geojson
 Writes results/audit/{candidates_all.csv, CANDIDATES_SUMMARY.md}
 """
@@ -14,7 +14,10 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 EXP = ROOT / "data" / "gee_exports"
-OUT = ROOT / "results" / "audit"
+import sys
+VER = sys.argv[1] if len(sys.argv) > 1 else "v1"
+PFX = "C1" if VER == "v1" else f"C1{VER}"
+OUT = ROOT / "results" / "audit" / VER
 SITES = ["Som", "Lep", "Cho", "Sira", "Ped", "Din", "Bal", "Pul"]
 SEASONS = [2019, 2020, 2021, 2022]
 
@@ -22,7 +25,7 @@ SEASONS = [2019, 2020, 2021, 2022]
 def load() -> pd.DataFrame:
     rows = []
     for s in SITES:
-        g = json.loads((EXP / f"C1_candidates_{s}.geojson").read_text(encoding="utf-8"))
+        g = json.loads((EXP / f"{PFX}_candidates_{s}.geojson").read_text(encoding="utf-8"))
         rows += [f["properties"] for f in g["features"]]
     d = pd.DataFrame(rows)
     d["class"] = d.irrigated.map({0: "rainfed", 1: "irrigated"})
@@ -41,7 +44,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     d = load()
     d.drop(columns=["label"], errors="ignore").to_csv(OUT / "candidates_all.csv", index=False)
-    st = pd.read_csv(EXP / "C1_stats.csv").set_index("site_code")
+    st = pd.read_csv(EXP / f"{PFX}_stats.csv").set_index("site_code")
 
     dup = d.field_id.duplicated().sum()
     area = st[["farmland_ha", "candidate_ha", "candidate_rainfed_ha", "candidate_irrigated_ha"]].copy()

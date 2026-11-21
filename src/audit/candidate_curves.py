@@ -9,9 +9,9 @@ What do the "historically winter-active" candidates look like inside the winter?
 Shapes are judged per field and season on monthly medians, REFERENCE seasons 2019-20 .. 2022-23 only
 (the seasons C1 selected on). Later seasons are summarised separately, for information.
 
-    python src/audit/candidate_curves.py
+    python src/audit/candidate_curves.py [v1|v2]
 Reads  data/gee_exports/C2_candidate_timeseries.csv
-Writes results/audit/{monthly_ndvi.csv, shapes_field_season.csv, shapes_field.csv,
+Writes results/audit/<version>/{monthly_ndvi.csv, shapes_field_season.csv, shapes_field.csv,
                       CANDIDATE_CURVES.md, curves_by_site.png, curves_by_shape.png}
 """
 from __future__ import annotations
@@ -25,8 +25,10 @@ import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-TS = ROOT / "data" / "gee_exports" / "C2_candidate_timeseries.csv"
-OUT = ROOT / "results" / "audit"
+import sys
+VER = sys.argv[1] if len(sys.argv) > 1 else "v1"          # v1: first C1 run, v2: rise rule
+TS = ROOT / "data" / "gee_exports" / ("C2_candidate_timeseries.csv" if VER == "v1" else f"C2_candidate_timeseries_{VER}.csv")
+OUT = ROOT / "results" / "audit" / VER
 SITES = ["Som", "Lep", "Cho", "Sira", "Ped", "Din", "Bal", "Pul"]
 REF = [2019, 2020, 2021, 2022]
 MONTHS = [10, 11, 12, 1, 2, 3, 4]                 # season order Oct .. Apr
