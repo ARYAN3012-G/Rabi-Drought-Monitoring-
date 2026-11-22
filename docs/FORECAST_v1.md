@@ -98,3 +98,6 @@ The first run (c976795) had three input errors. It is kept in git and reported a
 - **December–March subset** by season.
 - **Weather-cell cluster bootstrap** in addition to the point bootstrap.
 - **Span of the "decline":** from the latest observation to the target. It is reported as "decline from the latest observation to the forecast target". It does not distinguish drought from harvest.
+
+## Amendment A1b (22 November 2026; from the second independent review)
+The fallback climatology, used when a point has no own climatology (146 of 105,594 test rows), averaged other rows of the evaluated season. Later observation availability could therefore change an earlier forecast's input. It is now a mandal × irrigation × day-of-season curve computed from the allowed training seasons only, excluding the row's own season, from the point curves. The model, research question and acceptance rule are unchanged.

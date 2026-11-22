@@ -57,11 +57,22 @@ def add_clim(d, P, pidx, seasons, allowed, pool_key):
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore", RuntimeWarning)
                 vals[rows] = np.nanmean(P[pi[rows][:, None], np.array(use)[None, :], doy[rows][:, None]], axis=1)
-        tmp = pd.DataFrame({"k": pool_key.to_numpy(), "s": own, "v": vals})
+        # fallback (A1b): mandal x irrigation x day-of-season curve from the allowed seasons only (own season
+        # excluded), computed from the point curves P - never from other rows of the evaluated season
+        keys = pool_key.to_numpy()
+        kpts = {k: np.unique(pi[keys == k]) for k in np.unique(keys)}
         for s in sorted(set(own)):
-            m = (tmp.s == s).to_numpy()
-            pool = tmp[m].groupby("k").v.transform("mean").to_numpy()
-            vals[m] = np.where(np.isnan(vals[m]), pool, vals[m])
+            use = [seasons.index(a) for a in allowed if a != s]
+            if not use:
+                continue
+            for k, pts in kpts.items():
+                rows = np.where((own == s) & (keys == k) & np.isnan(vals))[0]
+                if len(rows) == 0:
+                    continue
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore", RuntimeWarning)
+                    curve = np.nanmean(P[pts][:, use, :], axis=(0, 1))
+                vals[rows] = curve[doy[rows]]
         res[col] = vals
     return d.assign(**res)
 
