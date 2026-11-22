@@ -20,11 +20,12 @@ from protocol import md_table  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 GEE = ROOT / "data" / "gee_exports"
 OUT = ROOT / "data" / "forecast"
-WEATHER_DIR = Path(os.environ.get("WEATHER_DIR", ROOT.parent / "data" / "processed" / "weather"))
+WEATHER_DIR = Path(os.environ.get("PREPARED_WEATHER_DIR", ROOT.parent / "data" / "prepared"))  # v3/v4, frozen SPEI
 SEASONS = list(range(2019, 2026))
 
 MIN_COUNT, NDVI_MIN, NDVI_MAX = 12, -0.2, 1.0
-SAT_DELAY, WX_DELAY = 2, 1
+SAT_DELAY = 2
+WX_DELAYS = {"": 8, "_d1": 1}   # main: AgERA5 ~8-day publication delay; _d1 = sensitivity only
 MAX_INPUT_AGE = 12
 LEAD, TOL = 15, 3
 CLIM_HALF = 7
@@ -49,7 +50,7 @@ def weather_cells() -> dict:
     files = pd.read_csv(ROOT / "data" / "sites.csv").weather_file.unique()
     cells = {}
     for wf in files:
-        d = pd.read_csv(WEATHER_DIR / f"{wf}_with_spei.csv", parse_dates=["valid_time"]).set_index("valid_time")
+        d = pd.read_csv(WEATHER_DIR / f"{wf}.csv", parse_dates=["valid_time"]).set_index("valid_time")
         cells[wf] = d
     return cells
 
@@ -58,7 +59,7 @@ def nearest_cell(cells: dict, lat: float, lon: float) -> str:
     return min(cells, key=lambda k: (cells[k].latitude.iloc[0] - lat) ** 2 + (cells[k].longitude.iloc[0] - lon) ** 2)
 
 
-def weather_features(d: pd.DataFrame, dates: pd.DatetimeIndex) -> pd.DataFrame:
+def weather_features(d: pd.DataFrame, dates: pd.DatetimeIndex, delay: int, sfx: str) -> pd.DataFrame:
     d = d.asfreq("D")
     rain = d.Precipitation_Flux.fillna(0)
     et0 = d.ReferenceET_PenmanMonteith_FAO56
@@ -69,19 +70,19 @@ def weather_features(d: pd.DataFrame, dates: pd.DatetimeIndex) -> pd.DataFrame:
     clim_years = range(1979, 2012)
     rows = []
     for t in dates:
-        e = t - pd.Timedelta(days=WX_DELAY)
+        e = t - pd.Timedelta(days=delay)
         jun = pd.Timestamp(e.year if e.month >= 6 else e.year - 1, 6, 1)
         since = rain[jun:e].sum()
-        norm = np.mean([rain[jun.replace(year=y):e.replace(year=y + (e.year - jun.year))].sum() for y in clim_years])
-        rows.append(dict(
-            issue_date=t,
-            rain30=cr[e] - cr[e - pd.Timedelta(days=30)],
-            rain90=cr[e] - cr[e - pd.Timedelta(days=90)],
-            rain_jun_ratio=since / norm if norm > 0 else np.nan,
-            et0_15=et0[e - pd.Timedelta(days=14):e].mean(),
-            tmax_15=tmax[e - pd.Timedelta(days=14):e].mean(),
-            wb60=wb[e] - wb[e - pd.Timedelta(days=60)],
-            spei=d.SPEI.get(e, np.nan)))
+        span = e - jun   # same number of days after 1 June in each normal year (leap-day safe)
+        norm = np.mean([rain[pd.Timestamp(y, 6, 1):pd.Timestamp(y, 6, 1) + span].sum() for y in clim_years])
+        f = dict(rain30=cr[e] - cr[e - pd.Timedelta(days=30)],
+                 rain90=cr[e] - cr[e - pd.Timedelta(days=90)],
+                 rain_jun_ratio=since / norm if norm > 0 else np.nan,
+                 et0_15=et0[e - pd.Timedelta(days=14):e].mean(),
+                 tmax_15=tmax[e - pd.Timedelta(days=14):e].mean(),
+                 wb60=wb[e] - wb[e - pd.Timedelta(days=60)],
+                 spei=d.SPEI.get(e, np.nan))
+        rows.append({"issue_date": t, **{k + sfx: v for k, v in f.items()}})
     return pd.DataFrame(rows)
 
 
@@ -177,12 +178,18 @@ def main():
     centre = pts.groupby("mandal")[["lat", "lon"]].mean()
     m2c = {m: nearest_cell(cells, r.lat, r.lon) for m, r in centre.iterrows()}
     wx = []
+    days = pd.DatetimeIndex(sorted(inst.issue_date.unique()))
     for c in set(m2c.values()):
-        w = weather_features(cells[c], pd.DatetimeIndex(sorted(inst.issue_date.unique())))
+        w = None
+        for sfx, delay in WX_DELAYS.items():
+            x = weather_features(cells[c], days, delay, sfx)
+            w = x if w is None else w.merge(x, on="issue_date")
         w["cell"] = c
         wx.append(w)
     inst["cell"] = inst.mandal.map(m2c)
     inst = inst.merge(pd.concat(wx), on=["cell", "issue_date"], how="left")
+    inst["doy_fc"] = inst.doy_issue + LEAD          # climatology day, known at issue (amendment A1)
+    inst["span_days"] = inst.doy_target - inst.doy_last
 
     pids = sorted(pts.point_id)
     P = point_curves(obs, pids)
@@ -202,7 +209,10 @@ def main():
              md_table(st.reset_index()), "",
              "## Usable forecasts by season and class", "",
              md_table(ok.groupby(["season", "irr"]).size().unstack().rename(columns={0: "rainfed", 1: "irrigated"}).reset_index()),
-             "", f"Distinct point-seasons with >= 1 usable forecast: {ok.groupby(['point_id', 'season']).ngroups}"]
+             "", f"Distinct point-seasons with >= 1 usable forecast: {ok.groupby(['point_id', 'season']).ngroups}",
+             "", "Weather: data/prepared (frozen 1979-2011 SPEI). Missing share among usable rows: "
+             + ", ".join(f"{c} {ok[c].isna().mean():.1%}" for c in ok.columns
+                         if c.startswith(("rain", "et0", "tmax", "wb60", "spei"))), ""]
     (OUT / "DATASET.md").write_text("\n".join(lines), encoding="utf-8")
     print("\n".join(lines))
 

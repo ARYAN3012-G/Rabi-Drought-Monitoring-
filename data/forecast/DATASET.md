@@ -31,3 +31,5 @@ no_recent_obs = latest observation older than 12 days (NOT 'no crop'); no_target
 | 2025 | 24825 | 12381 |
 
 Distinct point-seasons with >= 1 usable forecast: 9450
+
+Weather: data/prepared (frozen 1979-2011 SPEI). Missing share among usable rows: rain30 0.0%, rain90 0.0%, rain_jun_ratio 0.0%, et0_15 0.0%, tmax_15 0.0%, wb60 0.0%, spei 0.0%, rain30_d1 0.0%, rain90_d1 0.0%, rain_jun_ratio_d1 0.0%, et0_15_d1 0.0%, tmax_15_d1 0.0%, wb60_d1 0.0%, spei_d1 0.0%
