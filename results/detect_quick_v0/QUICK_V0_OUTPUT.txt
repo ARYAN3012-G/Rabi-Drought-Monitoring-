@@ -1,0 +1,16 @@
+
+=== issue 15 Jan: train n=688 (drought 18%), test n=636 (drought 28%)
+XGBoost   AUC 0.832  acc 0.796  bal.acc 0.769  precision 0.613  recall 0.710  F1 0.658
+Baseline (greenness below normal) AUC 0.396
+  2023-24: n 212, drought 43%, AUC 0.850, recall 0.70, precision 0.77
+  2024-25: n 221, drought 23%, AUC 0.870, recall 0.78, precision 0.61
+  2025-26: n 203, drought 17%, AUC 0.730, recall 0.62, precision 0.38
+top features: ndvi 0.08, days_since_peak 0.08, normal_dry 0.08, days_to_normal_dry 0.08, drop_from_peak 0.07, chg30 0.07, chg15 0.06, peak 0.05
+
+=== issue 15 Feb: train n=688 (drought 18%), test n=636 (drought 28%)
+XGBoost   AUC 0.891  acc 0.866  bal.acc 0.808  precision 0.810  recall 0.676  F1 0.737
+Baseline (greenness below normal) AUC 0.699
+  2023-24: n 212, drought 43%, AUC 0.917, recall 0.76, precision 0.87
+  2024-25: n 221, drought 23%, AUC 0.877, recall 0.67, precision 0.76
+  2025-26: n 203, drought 17%, AUC 0.811, recall 0.47, precision 0.70
+top features: chg30 0.11, normal_dry 0.10, days_to_normal_dry 0.09, days_since_peak 0.08, et0_30 0.07, chg15 0.06, drop_from_peak 0.06, rain_jun_nov_ratio 0.05
