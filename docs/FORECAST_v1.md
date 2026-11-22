@@ -86,3 +86,15 @@ The existing satellite-module models forecast an SPEI drought class, not NDVI. T
 The forecast is called **useful** only if, **in each of the three test seasons**, its MAE is lower than every baseline, **and** the 95 % bootstrap interval of (MAE_model − MAE_best baseline), pooled over the test seasons, is entirely below 0. Otherwise the result is reported as it is.
 
 A useful forecast is **vegetation-condition evidence**. It becomes agricultural-drought evidence only after independent validation.
+
+## Amendment A1 (22 November 2026, after the first run c976795; from an independent review)
+The first run (c976795) had three input errors. It is kept in git and reported as **superseded**. The corrected run replaces it, and the acceptance rule is unchanged.
+1. **Future image date in a feature.** `clim_target` was evaluated on the day of the actual future image used as target. That date depends on future clouds, so it is unknown at issue time. It is now evaluated at **issue date + 15 days** for the model and the baselines. The actual future image is used only for scoring.
+2. **Weather source.** The first run read the legacy weather files (`data/processed/weather`), whose SPEI is the old full-record calibration and is missing in about 27 % of the test rows. The corrected run reads `data/prepared/<cell>.csv`: the weather module's v3/v4 files, SPEI recalibrated on 1979–2011 only with frozen parameters (`src/dataprep/prepare_data.py`, `results/v4/spei_calibration.json`). Missingness is reported.
+3. **Weather availability.** AgERA5 is published with a delay of about 8 days, so the main run uses weather dated ≤ t − **8** days. A run with a 1-day delay is reported as a sensitivity check only.
+
+**Added reports, decided before the corrected run:**
+- **Satellite-only XGBoost:** same settings, without the weather inputs. It shows whether weather improves accuracy, which feature importance cannot show.
+- **December–March subset** by season.
+- **Weather-cell cluster bootstrap** in addition to the point bootstrap.
+- **Span of the "decline":** from the latest observation to the target. It is reported as "decline from the latest observation to the forecast target". It does not distinguish drought from harvest.
