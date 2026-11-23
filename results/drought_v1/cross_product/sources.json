@@ -1,0 +1,172 @@
+[
+  {
+    "cell": "Peddakadubur",
+    "request": {
+      "parameters": "GWETROOT",
+      "community": "AG",
+      "latitude": 15.800000000004218,
+      "longitude": 77.2999999999854,
+      "start": "19810101",
+      "end": "20260430",
+      "format": "JSON",
+      "time-standard": "UTC"
+    },
+    "header": {
+      "title": "NASA/POWER Source Native Resolution Daily Data",
+      "api": {
+        "version": "v2.10.5",
+        "name": "POWER Daily API"
+      },
+      "sources": [
+        "MERRA2"
+      ],
+      "fill_value": -999.0,
+      "time_standard": "UTC",
+      "start": "19810101",
+      "end": "20260430"
+    },
+    "units": {
+      "GWETROOT": {
+        "units": "1",
+        "longname": "Root Zone Soil Wetness"
+      }
+    },
+    "sha256": "a0970f7d04b65500a4a126ba4d31c534d5862b00363496dd6b5ba305fc80b2fe"
+  },
+  {
+    "cell": "Somandepalle",
+    "request": {
+      "parameters": "GWETROOT",
+      "community": "AG",
+      "latitude": 14.0,
+      "longitude": 77.6,
+      "start": "19810101",
+      "end": "20260430",
+      "format": "JSON",
+      "time-standard": "UTC"
+    },
+    "header": {
+      "title": "NASA/POWER Source Native Resolution Daily Data",
+      "api": {
+        "version": "v2.10.5",
+        "name": "POWER Daily API"
+      },
+      "sources": [
+        "MERRA2"
+      ],
+      "fill_value": -999.0,
+      "time_standard": "UTC",
+      "start": "19810101",
+      "end": "20260430"
+    },
+    "units": {
+      "GWETROOT": {
+        "units": "1",
+        "longname": "Root Zone Soil Wetness"
+      }
+    },
+    "sha256": "d188b020c7574a233817e1c998a5e6ec382bc7fbab0d24552106c2bc2b8742c8"
+  },
+  {
+    "cell": "cholasamudram",
+    "request": {
+      "parameters": "GWETROOT",
+      "community": "AG",
+      "latitude": 13.800000000004331,
+      "longitude": 77.59999999998536,
+      "start": "19810101",
+      "end": "20260430",
+      "format": "JSON",
+      "time-standard": "UTC"
+    },
+    "header": {
+      "title": "NASA/POWER Source Native Resolution Daily Data",
+      "api": {
+        "version": "v2.10.5",
+        "name": "POWER Daily API"
+      },
+      "sources": [
+        "MERRA2"
+      ],
+      "fill_value": -999.0,
+      "time_standard": "UTC",
+      "start": "19810101",
+      "end": "20260430"
+    },
+    "units": {
+      "GWETROOT": {
+        "units": "1",
+        "longname": "Root Zone Soil Wetness"
+      }
+    },
+    "sha256": "bf31784eff7e18879aa69bd1913ea208be629f740d9fa4f814caaf2ae6ed7583"
+  },
+  {
+    "cell": "kurnool_dinedevarapadu",
+    "request": {
+      "parameters": "GWETROOT",
+      "community": "AG",
+      "latitude": 15.8,
+      "longitude": 78.0,
+      "start": "19810101",
+      "end": "20260430",
+      "format": "JSON",
+      "time-standard": "UTC"
+    },
+    "header": {
+      "title": "NASA/POWER Source Native Resolution Daily Data",
+      "api": {
+        "version": "v2.10.5",
+        "name": "POWER Daily API"
+      },
+      "sources": [
+        "MERRA2"
+      ],
+      "fill_value": -999.0,
+      "time_standard": "UTC",
+      "start": "19810101",
+      "end": "20260430"
+    },
+    "units": {
+      "GWETROOT": {
+        "units": "1",
+        "longname": "Root Zone Soil Wetness"
+      }
+    },
+    "sha256": "50d08296ad8518190654cf42bf11ca01a102b955257f6719f02f0ef71a4ee7e6"
+  },
+  {
+    "cell": "sira",
+    "request": {
+      "parameters": "GWETROOT",
+      "community": "AG",
+      "latitude": 13.8,
+      "longitude": 77.0,
+      "start": "19810101",
+      "end": "20260430",
+      "format": "JSON",
+      "time-standard": "UTC"
+    },
+    "header": {
+      "title": "NASA/POWER Source Native Resolution Daily Data",
+      "api": {
+        "version": "v2.10.5",
+        "name": "POWER Daily API"
+      },
+      "sources": [
+        "MERRA2"
+      ],
+      "fill_value": -999.0,
+      "time_standard": "UTC",
+      "start": "19810101",
+      "end": "20260430"
+    },
+    "units": {
+      "GWETROOT": {
+        "units": "1",
+        "longname": "Root Zone Soil Wetness"
+      }
+    },
+    "sha256": "8c0ae63820acad4052a672a767744f4136b8e46a7e7b8d051cad3fa6115c8539"
+  }
+]

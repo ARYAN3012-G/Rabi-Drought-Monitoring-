@@ -1,5 +1,13 @@
 # Rabi early-drying risk model v1 - results
 
+> **Superseded for operational claims (22 November 2026).** Review found a
+> completed-season status in the predictors, validation data in reference
+> construction, and unpublished rainfall in the first December issues. The
+> original numbers below are preserved for provenance. Use
+> [`../detect_v2/EVENT_REPORT.md`](../detect_v2/EVENT_REPORT.md) for the corrected
+> new-event evaluation and distinct point-season warning counts. v2 also changes
+> reference eligibility, so its scores are not a same-cohort ablation of v1.
+
 Rules: `docs/DETECT_v1.md` (fixed before the run). Train 2019-20..2021-22, validation 2022-23 (thresholds, ensemble weights), evaluation 2023-24..2025-26 - historical seasons already consulted during development, never used for fitting or choices here. Target = satellite-defined early drying (>= 21 days before the point's normal drying date), not field-verified drought.
 
 ## All eligible forecasts (mean over 5 seeds)

@@ -1,0 +1,31 @@
+{
+  "duplicate_forecast_keys": 0,
+  "future_target_windows": "passed",
+  "input_cutoffs": "passed",
+  "validation_model_selection": "passed",
+  "saved_model_reproduction": "passed",
+  "outcome_mutation_invariance": "passed",
+  "sha256": {
+    "src\\drought\\audit.py": "522bff7ca966ef31dcbb744e97fd352ef5cc95b315023614546f48efd83cbb6a",
+    "src\\drought\\backtest.py": "a113e5922363bf5f78d5421e7fcacad1c4135c6342a4d95c67a9279b523217fc",
+    "src\\drought\\crop_context.py": "372edc098b33cc7de328777a3479744daad9e90dfe8099bc7f1d59cc90d1f4a4",
+    "src\\drought\\cross_product.py": "6f2274e6c2f5dccc24c9c36d11fd4e7fb78b5ebf1d8bcbdcd8be719af9fb35cb",
+    "src\\drought\\fetch_soil.py": "026db0adfff7256a2fb17ada0d111443b8bf0893deacd0b296a1c838157e9021",
+    "src\\drought\\field_validation.py": "5342e583c86d7ceeb01486b60ac659a24c664db152951058bfb5ba017f5f51f8",
+    "src\\drought\\live_data.py": "a24b4e259eeba309041821a40c5f82712f79712d47bba8036cdc1ceca87e200f",
+    "src\\drought\\model.py": "81f4c458c735ce84a43e6ce349fd2b7842dd43ea4568acb58539621f2ee369a2",
+    "src\\drought\\operations.py": "80818ae7b86f9808dabaffa6d713fd14c45abb3f60da41943bf3ab805a94fc3c",
+    "src\\drought\\report.py": "7dfec4f2125dede123404bda971b41b2ae6392a2cf13fbd82d055e288cb63072",
+    "src\\drought\\run.py": "68ca854a4e01af71e58ff8c69103ab621d7bb8860932d371f807dfbbaed62c0e",
+    "src\\drought\\satellite_io.py": "ee65e07c301149ef928f80a0c763add49436c4ea21bb5385f00229106c503e4d",
+    "docs\\DROUGHT_v1.md": "6ef5fda98c362c33cf97435e6c88f47d98430f43b7d2fd216b834eece0c93ba4",
+    "tests\\test_drought_prediction.py": "047dffa70b4ecb1869c22c40c36fa2bd015165bdae8252d584adec02e2bfc2a9",
+    "results\\drought_v1\\selection_locked.json": "f4f2f9e7ccfe88b064e9e13180f3637898ae44bfdeefb3eff2b806eb3323776b",
+    "results\\drought_v1\\predictions.csv.gz": "74fd5d2756da61d658111bb1d6749cb27ba5429494897f3c3bf029872f55dba2",
+    "data\\drought_v1\\soil_daily.csv.gz": "43d6915a2d1f979f59ea5c7c57510955edb2afd7c789cc97c683f8e3ab8aa4da",
+    "models\\drought_v1\\forecast_15d.joblib": "87e49a94ba728333c726456f07b6729359f4e11e8137060b1431d08b185f7031",
+    "models\\drought_v1\\forecast_30d.joblib": "5711db2978710c69154f30579e62d4cf73e56f744e53c6df1f028b94db04c283",
+    "models\\drought_v1\\forecast_7d.joblib": "4d99de4818bd087a613e15ea8c8d8a7e3bfdf06af65b3bd4c77c02dc100c78a5",
+    "models\\drought_v1\\reference.joblib": "8027a4e934508e2789d7eaac391af987c28acafb2ad21a859443c809b2f29fe6"
+  }
+}

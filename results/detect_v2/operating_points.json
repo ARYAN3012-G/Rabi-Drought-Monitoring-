@@ -1,0 +1,92 @@
+[
+  {
+    "horizon": 7,
+    "selected_model": "Random forest",
+    "selection": "highest validation average precision",
+    "weights": {
+      "Logistic regression": 0.07403430003421213,
+      "Random forest": 0.5484071136840739,
+      "XGBoost": 0.37755858628171396
+    },
+    "validation_ap": {
+      "Logistic regression": 0.025146124784361634,
+      "Random forest": 0.18626925231897445,
+      "XGBoost": 0.12823968511432937,
+      "Ensemble equal": 0.1191938586099657,
+      "Ensemble weighted": 0.1533866815379787
+    },
+    "n_train": 4082,
+    "n_val": 2440,
+    "thresholds": {
+      "Logistic regression": 0.5278632318887173,
+      "Random forest": 0.05589303319689033,
+      "XGBoost": 0.010282979980111122,
+      "Ensemble equal": 0.30584111066386915,
+      "Ensemble weighted": 0.11232251101117643,
+      "Below-normal baseline": -0.15671521366601465,
+      "Drop baseline": 0.045343733470000945,
+      "Early-drying rule": 0.5,
+      "Zero-onset baseline": 0.5
+    }
+  },
+  {
+    "horizon": 15,
+    "selected_model": "Random forest",
+    "selection": "highest validation average precision",
+    "weights": {
+      "Logistic regression": 0.08856458385678831,
+      "Random forest": 0.5041268401545812,
+      "XGBoost": 0.4073085759886307
+    },
+    "validation_ap": {
+      "Logistic regression": 0.04918805775575992,
+      "Random forest": 0.27998799350595766,
+      "XGBoost": 0.22621590807158148,
+      "Ensemble equal": 0.20386135893728288,
+      "Ensemble weighted": 0.23850119858065433
+    },
+    "n_train": 4082,
+    "n_val": 2440,
+    "thresholds": {
+      "Logistic regression": 0.6115781953609413,
+      "Random forest": 0.12097651439943176,
+      "XGBoost": 0.006479955706745386,
+      "Ensemble equal": 0.3165043702671471,
+      "Ensemble weighted": 0.10128899916788825,
+      "Below-normal baseline": -0.1309570764488406,
+      "Drop baseline": 0.045343733470000945,
+      "Early-drying rule": 0.5,
+      "Zero-onset baseline": 0.5
+    }
+  },
+  {
+    "horizon": 30,
+    "selected_model": "Random forest",
+    "selection": "highest validation average precision",
+    "weights": {
+      "Logistic regression": 0.14549983188593654,
+      "Random forest": 0.45421046846800883,
+      "XGBoost": 0.40028969964605465
+    },
+    "validation_ap": {
+      "Logistic regression": 0.1120864988017132,
+      "Random forest": 0.3499032299197173,
+      "XGBoost": 0.30836510501873865,
+      "Ensemble equal": 0.30309969591930175,
+      "Ensemble weighted": 0.31182333822984587
+    },
+    "n_train": 4082,
+    "n_val": 2440,
+    "thresholds": {
+      "Logistic regression": 0.4880290002572703,
+      "Random forest": 0.12927153710678035,
+      "XGBoost": 0.016155292717739966,
+      "Ensemble equal": 0.2554964012033165,
+      "Ensemble weighted": 0.16640824928687772,
+      "Below-normal baseline": 0.08389899897951887,
+      "Drop baseline": 0.0,
+      "Early-drying rule": 0.5,
+      "Zero-onset baseline": 0.5
+    }
+  }
+]

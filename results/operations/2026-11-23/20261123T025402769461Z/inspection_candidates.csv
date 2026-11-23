@@ -1,0 +1,1 @@
+point_id,mandal,irr,lon,lat,date,ndvi,cell,image_age_days,vegetation_context,issue_date,horizon,target_start,target_date,model,status,input_cutoff,weather_used,scope,drought_risk_score,warning,threshold,forecast_class,latest_soil_percentile,p_no_deficit,p_moderate,p_severe,forecast_mode,validation_status,interpretation,field_drought_assessment

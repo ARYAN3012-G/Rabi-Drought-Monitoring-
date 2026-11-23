@@ -11,8 +11,8 @@ from sklearn.metrics import (balanced_accuracy_score, f1_score, precision_score,
 
 warnings.simplefilter("ignore")
 SP = Path(__file__).resolve().parents[2] / "results" / "detect_quick_v0"
-R = Path(r"c:/Users/aryan/OneDrive/Desktop/weather_module/rabi_module")
-W = Path(r"c:/Users/aryan/OneDrive/Desktop/weather_module/data/prepared")
+R = Path(__file__).resolve().parents[2]
+W = R / "data" / "prepared"
 sys.path.insert(0, str(R / "src" / "forecast"))
 import build_dataset as B  # noqa: E402
 

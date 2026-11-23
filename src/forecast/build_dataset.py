@@ -20,7 +20,7 @@ from protocol import md_table  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 GEE = ROOT / "data" / "gee_exports"
 OUT = ROOT / "data" / "forecast"
-WEATHER_DIR = Path(os.environ.get("PREPARED_WEATHER_DIR", ROOT.parent / "data" / "prepared"))  # v3/v4, frozen SPEI
+WEATHER_DIR = Path(os.environ.get("PREPARED_WEATHER_DIR", ROOT / "data" / "prepared"))  # v3/v4, frozen SPEI
 SEASONS = list(range(2019, 2026))
 
 MIN_COUNT, NDVI_MIN, NDVI_MAX = 12, -0.2, 1.0

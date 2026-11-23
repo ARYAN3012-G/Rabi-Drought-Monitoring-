@@ -1,0 +1,7 @@
+horizon,group,matched_assessments,positive_assessments,tp,fp,fn,tn,precision,recall
+7,rainfed_primary,0,0,0,0,0,0,,
+7,irrigated_context_only,0,0,0,0,0,0,,
+15,rainfed_primary,0,0,0,0,0,0,,
+15,irrigated_context_only,0,0,0,0,0,0,,
+30,rainfed_primary,0,0,0,0,0,0,,
+30,irrigated_context_only,0,0,0,0,0,0,,

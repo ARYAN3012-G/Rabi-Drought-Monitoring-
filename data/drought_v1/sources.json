@@ -1,0 +1,627 @@
+[
+  {
+    "cell": "Peddakadubur",
+    "request": {
+      "latitude": 15.800000000004218,
+      "longitude": 77.2999999999854,
+      "start_date": "1981-01-01",
+      "end_date": "1990-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\Peddakadubur_1981_1990-12-31.json",
+    "returned_lat": 15.800003,
+    "returned_lon": 77.30002,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "b66ef4459ad291e440ae2e34ac0256e346c90d05d30f02be629c8345289f4d7f"
+  },
+  {
+    "cell": "Peddakadubur",
+    "request": {
+      "latitude": 15.800000000004218,
+      "longitude": 77.2999999999854,
+      "start_date": "1991-01-01",
+      "end_date": "2000-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\Peddakadubur_1991_2000-12-31.json",
+    "returned_lat": 15.800003,
+    "returned_lon": 77.30002,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "ce247b5c90d87dbe356f262b8ca30c61b07130669056c6e0ae1d6a48c5e466b6"
+  },
+  {
+    "cell": "Peddakadubur",
+    "request": {
+      "latitude": 15.800000000004218,
+      "longitude": 77.2999999999854,
+      "start_date": "2001-01-01",
+      "end_date": "2010-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\Peddakadubur_2001_2010-12-31.json",
+    "returned_lat": 15.800003,
+    "returned_lon": 77.30002,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "39fe0896461f57cdc543b1c9dfdd5ad6aa8e84e7dcad94ca4bd8c82ae339fc63"
+  },
+  {
+    "cell": "Peddakadubur",
+    "request": {
+      "latitude": 15.800000000004218,
+      "longitude": 77.2999999999854,
+      "start_date": "2011-01-01",
+      "end_date": "2020-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\Peddakadubur_2011_2020-12-31.json",
+    "returned_lat": 15.800003,
+    "returned_lon": 77.30002,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "48a1b893b8a6bc4fa07adcfb18af03278a8f4a994996051bc645aff650e2f0ca"
+  },
+  {
+    "cell": "Peddakadubur",
+    "request": {
+      "latitude": 15.800000000004218,
+      "longitude": 77.2999999999854,
+      "start_date": "2021-01-01",
+      "end_date": "2026-04-30",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\Peddakadubur_2021_2026-04-30.json",
+    "returned_lat": 15.800003,
+    "returned_lon": 77.30002,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "19214ad5283a12f2147d2e4c06368c509731d0b312d90e334db9933a6a45310c"
+  },
+  {
+    "cell": "Somandepalle",
+    "request": {
+      "latitude": 14.0,
+      "longitude": 77.6,
+      "start_date": "1981-01-01",
+      "end_date": "1990-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\Somandepalle_1981_1990-12-31.json",
+    "returned_lat": 14.0,
+    "returned_lon": 77.600006,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "f467c12312ef6ecd18adc30077b4ad5992d70ad522ceee16c863e74222223210"
+  },
+  {
+    "cell": "Somandepalle",
+    "request": {
+      "latitude": 14.0,
+      "longitude": 77.6,
+      "start_date": "1991-01-01",
+      "end_date": "2000-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\Somandepalle_1991_2000-12-31.json",
+    "returned_lat": 14.0,
+    "returned_lon": 77.600006,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "e23e66ca9015e80981bd21eecf9574406d1c4ef9a5ce8b148ceb7e7a9265070f"
+  },
+  {
+    "cell": "Somandepalle",
+    "request": {
+      "latitude": 14.0,
+      "longitude": 77.6,
+      "start_date": "2001-01-01",
+      "end_date": "2010-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\Somandepalle_2001_2010-12-31.json",
+    "returned_lat": 14.0,
+    "returned_lon": 77.600006,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "3cb7f2e736cbd22d007836c88d87364584a9ea781d40a620065035b13882bd50"
+  },
+  {
+    "cell": "Somandepalle",
+    "request": {
+      "latitude": 14.0,
+      "longitude": 77.6,
+      "start_date": "2011-01-01",
+      "end_date": "2020-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\Somandepalle_2011_2020-12-31.json",
+    "returned_lat": 14.0,
+    "returned_lon": 77.600006,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "4f792e32699bbd92f1696090a0dcab45488b03ffd011424dc2cf847eea0e5c4d"
+  },
+  {
+    "cell": "Somandepalle",
+    "request": {
+      "latitude": 14.0,
+      "longitude": 77.6,
+      "start_date": "2021-01-01",
+      "end_date": "2026-04-30",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\Somandepalle_2021_2026-04-30.json",
+    "returned_lat": 14.0,
+    "returned_lon": 77.600006,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "f33b4d494410ab7c4206422fcbd9436f17690a1cc8e435c8cfadfdfe649b0d4e"
+  },
+  {
+    "cell": "cholasamudram",
+    "request": {
+      "latitude": 13.800000000004331,
+      "longitude": 77.59999999998536,
+      "start_date": "1981-01-01",
+      "end_date": "1990-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\cholasamudram_1981_1990-12-31.json",
+    "returned_lat": 13.800003,
+    "returned_lon": 77.600006,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "0ec856726bfe86803d17d6b3c30008f0305d3fc2ffb83e003706ba8684b7f080"
+  },
+  {
+    "cell": "cholasamudram",
+    "request": {
+      "latitude": 13.800000000004331,
+      "longitude": 77.59999999998536,
+      "start_date": "1991-01-01",
+      "end_date": "2000-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\cholasamudram_1991_2000-12-31.json",
+    "returned_lat": 13.800003,
+    "returned_lon": 77.600006,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "fff45cc6a7dbf8a0aae6ebadd2ef06cd9298f6d633440ecbf0b4e29b40e747c2"
+  },
+  {
+    "cell": "cholasamudram",
+    "request": {
+      "latitude": 13.800000000004331,
+      "longitude": 77.59999999998536,
+      "start_date": "2001-01-01",
+      "end_date": "2010-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\cholasamudram_2001_2010-12-31.json",
+    "returned_lat": 13.800003,
+    "returned_lon": 77.600006,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "aee3ddf78525b95c34242ea74acf0d94311bbfc1b5830a79db7157d63f32951f"
+  },
+  {
+    "cell": "cholasamudram",
+    "request": {
+      "latitude": 13.800000000004331,
+      "longitude": 77.59999999998536,
+      "start_date": "2011-01-01",
+      "end_date": "2020-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\cholasamudram_2011_2020-12-31.json",
+    "returned_lat": 13.800003,
+    "returned_lon": 77.600006,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "a53253ddc3945c1dc09ed9dfacf2a596dfdd5bc4915286c3e185568c6d7b7aa4"
+  },
+  {
+    "cell": "cholasamudram",
+    "request": {
+      "latitude": 13.800000000004331,
+      "longitude": 77.59999999998536,
+      "start_date": "2021-01-01",
+      "end_date": "2026-04-30",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\cholasamudram_2021_2026-04-30.json",
+    "returned_lat": 13.800003,
+    "returned_lon": 77.600006,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "e55603a9b6bf6d460587f87daad19c33fdd4554b8f406deb7c60a10fed5ffc78"
+  },
+  {
+    "cell": "kurnool_dinedevarapadu",
+    "request": {
+      "latitude": 15.8,
+      "longitude": 78.0,
+      "start_date": "1981-01-01",
+      "end_date": "1990-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\kurnool_dinedevarapadu_1981_1990-12-31.json",
+    "returned_lat": 15.800003,
+    "returned_lon": 78.0,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "f5175d60b99992ac0e3b14c7a202a57eab5200024c77f1b140fdf8a9b35b1169"
+  },
+  {
+    "cell": "kurnool_dinedevarapadu",
+    "request": {
+      "latitude": 15.8,
+      "longitude": 78.0,
+      "start_date": "1991-01-01",
+      "end_date": "2000-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\kurnool_dinedevarapadu_1991_2000-12-31.json",
+    "returned_lat": 15.800003,
+    "returned_lon": 78.0,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "042c72bb058a23ba7595961eb727ed5591e815618a7977009bf2da9bfe2fc613"
+  },
+  {
+    "cell": "kurnool_dinedevarapadu",
+    "request": {
+      "latitude": 15.8,
+      "longitude": 78.0,
+      "start_date": "2001-01-01",
+      "end_date": "2010-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\kurnool_dinedevarapadu_2001_2010-12-31.json",
+    "returned_lat": 15.800003,
+    "returned_lon": 78.0,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "2809693c8f0b9b070a47516653938aac780fed3498db53a02a523f8f9826682c"
+  },
+  {
+    "cell": "kurnool_dinedevarapadu",
+    "request": {
+      "latitude": 15.8,
+      "longitude": 78.0,
+      "start_date": "2011-01-01",
+      "end_date": "2020-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\kurnool_dinedevarapadu_2011_2020-12-31.json",
+    "returned_lat": 15.800003,
+    "returned_lon": 78.0,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "7cd853fd4575ca9f207ff9d4ede0bc276dbc6b3538c76ea6f358ad045b98045f"
+  },
+  {
+    "cell": "kurnool_dinedevarapadu",
+    "request": {
+      "latitude": 15.8,
+      "longitude": 78.0,
+      "start_date": "2021-01-01",
+      "end_date": "2026-04-30",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\kurnool_dinedevarapadu_2021_2026-04-30.json",
+    "returned_lat": 15.800003,
+    "returned_lon": 78.0,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "fd23ae68cfa1e4b37f6c216e28b9154a14192310e1e68220d18f26cd5048afeb"
+  },
+  {
+    "cell": "sira",
+    "request": {
+      "latitude": 13.8,
+      "longitude": 77.0,
+      "start_date": "1981-01-01",
+      "end_date": "1990-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\sira_1981_1990-12-31.json",
+    "returned_lat": 13.800003,
+    "returned_lon": 77.0,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "2e59f900e784686648cac2b14c3a15e5538e644d19816d6bcd46cab854e1ef8e"
+  },
+  {
+    "cell": "sira",
+    "request": {
+      "latitude": 13.8,
+      "longitude": 77.0,
+      "start_date": "1991-01-01",
+      "end_date": "2000-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\sira_1991_2000-12-31.json",
+    "returned_lat": 13.800003,
+    "returned_lon": 77.0,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "063429f6376e99788a19ed1e79087e5ba7d5ba43d14c86de9e90d06da33d35d4"
+  },
+  {
+    "cell": "sira",
+    "request": {
+      "latitude": 13.8,
+      "longitude": 77.0,
+      "start_date": "2001-01-01",
+      "end_date": "2010-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\sira_2001_2010-12-31.json",
+    "returned_lat": 13.800003,
+    "returned_lon": 77.0,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "21af97dc44c44e22ddd820dc37b7d342372a56c62407a604cee9345f82a55b5e"
+  },
+  {
+    "cell": "sira",
+    "request": {
+      "latitude": 13.8,
+      "longitude": 77.0,
+      "start_date": "2011-01-01",
+      "end_date": "2020-12-31",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\sira_2011_2020-12-31.json",
+    "returned_lat": 13.800003,
+    "returned_lon": 77.0,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "ef0e5ea9e8bc2ea8b354d4b4c41cce7565ed4f95217079231526bac2677159e1"
+  },
+  {
+    "cell": "sira",
+    "request": {
+      "latitude": 13.8,
+      "longitude": 77.0,
+      "start_date": "2021-01-01",
+      "end_date": "2026-04-30",
+      "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+      "models": "era5_land",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "elevation": "nan"
+    },
+    "source": "https://archive-api.open-meteo.com/v1/archive",
+    "file": "data\\drought_v1\\raw\\sira_2021_2026-04-30.json",
+    "returned_lat": 13.800003,
+    "returned_lon": 77.0,
+    "units": {
+      "time": "iso8601",
+      "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_7_to_28cm_mean": "m\u00b3/m\u00b3",
+      "soil_moisture_28_to_100cm_mean": "m\u00b3/m\u00b3"
+    },
+    "sha256": "19a19567248a2dc08d530f4a0454928235764874faab74c60dfb387595ceaf6c"
+  }
+]

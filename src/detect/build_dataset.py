@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "src" / "forecast"))
 from build_dataset import load_obs  # noqa: E402
 
 OUT = ROOT / "data" / "detect"
-WX = ROOT.parent / "data" / "prepared"
+WX = ROOT / "data" / "prepared"
 REF = [2019, 2020, 2021, 2022]
 HORIZONS = [7, 15, 30]
 SAT_DELAY, WX_DELAY, MAX_AGE = 2, 8, 12

@@ -1,1 +1,2 @@
-data/frozen/*.csv -text
+# Preserve exact research-input and provenance bytes across OS checkouts.
+* -text

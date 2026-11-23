@@ -1,0 +1,5 @@
+# Full research environment; saved drought-model runtime is a smaller subset.
+-r requirements-drought-dev.txt
+xgboost==3.2.0
+matplotlib==3.10.9
+scipy==1.15.3

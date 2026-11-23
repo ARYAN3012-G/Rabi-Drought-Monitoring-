@@ -1,0 +1,85 @@
+{
+  "issue_date": "2026-11-23",
+  "created_utc": "20261123T025402769461Z",
+  "software_status": "research monitoring workflow",
+  "research_status": "agricultural drought accuracy not established",
+  "run_status": "complete",
+  "files": {},
+  "forecast_status": "abstained",
+  "forecasts_issued": 0,
+  "regional_warnings": 0,
+  "points_with_recent_satellite_image": 0,
+  "point_population": 1350,
+  "update": null,
+  "issue_date_is_future": false,
+  "models": {
+    "7": {
+      "path": "models\\drought_v1\\forecast_7d.joblib",
+      "sha256": "4d99de4818bd087a613e15ea8c8d8a7e3bfdf06af65b3bd4c77c02dc100c78a5"
+    },
+    "15": {
+      "path": "models\\drought_v1\\forecast_15d.joblib",
+      "sha256": "87e49a94ba728333c726456f07b6729359f4e11e8137060b1431d08b185f7031"
+    },
+    "30": {
+      "path": "models\\drought_v1\\forecast_30d.joblib",
+      "sha256": "5711db2978710c69154f30579e62d4cf73e56f744e53c6df1f028b94db04c283"
+    }
+  },
+  "inputs": {
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\drought_v1\\soil_daily.csv.gz": {
+      "sha256": "43d6915a2d1f979f59ea5c7c57510955edb2afd7c789cc97c683f8e3ab8aa4da"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\drought_live\\soil_extension.csv.gz": {
+      "sha256": "bf0fd2656a9a4414f74ea818d09ffd831112e7df3709bf8fc313397301113728"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\data\\prepared\\Peddakadubur.csv": {
+      "sha256": "af154762123c15affd2bc105bc9dcca8e8d4ee9a40417fe921d30edb16d5347f"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\data\\prepared\\Somandepalle.csv": {
+      "sha256": "5228ca5c873945b8672409f7e64e2d04ad43da5a00fe0d3fa41d99cd7c07a266"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\data\\prepared\\cholasamudram.csv": {
+      "sha256": "968ec3ce210df7980d7026eb6a3f3cd733de8980969bbf9570c077fb9149b563"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\data\\prepared\\kurnool_dinedevarapadu.csv": {
+      "sha256": "94b829814f3406929e86919020215dea2257abfc461fe310350e4843255f12f7"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\data\\prepared\\sira.csv": {
+      "sha256": "1ad12c5eacfca992f1f588f6bb62c3a9f4e89450f58c46d3ce53faeaf5bed4a6"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\gee_exports\\C3_points_timeseries.csv": {
+      "sha256": "7abe8bb5be3ba6d911117fa62f302cfa8a997f83eda5f23f7ce612ddbcf77b71"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\config\\drought_cells.csv": {
+      "sha256": "b2d7d82e0350ea024a3158070a69c89a02e641ee6874e5f7a2a3994c32f8c757"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\gee_exports\\C3_points.csv": {
+      "sha256": "1aa4960e1e02f0af68b0e8523cb599696652a6f8cb55e03db8db5cabc18b0711"
+    }
+  },
+  "outputs": {
+    "features_used.csv": "9db28ed5acabca9f34d3ccfa4fe09fc190f4fa98f2411b1ccab76c39615112d7",
+    "inspection_candidates.csv": "e969abd5fe8080fef65d3e8205528d11bdc41ba1eadcb55c8eb699b5c00f3fad",
+    "regional_drought_risk.csv": "9366f927525d294706755fb0b260a92ed76397c0e7ec18b06635bfc46b2586fe",
+    "report.html": "4b6c4bf6c5da838e84b162be0ee7a3427e6c54f401e65d9b3e6092cc036280b9",
+    "RUN_SUMMARY.md": "c0518bd4eed32b9b0fdbe4455490dc6e9541640d6cf631e28e89023e3a67f073",
+    "sampled_point_context.csv": "bb8eec44f94a406f6a7c0ec98324647ec835f9a73730f06c83d9d1df52fb72a9",
+    "sampled_points.geojson": "81df73f01de5c9277ad96eebedcd499f8fba1559ac2968751f6ef5b1e77dc982",
+    "source_status.csv": "96b909c83328fc689862ee804b12a9eebf9223ee34d145959fe9bce7ba08765d"
+  },
+  "source_hashes": {
+    "src\\drought\\audit.py": "522bff7ca966ef31dcbb744e97fd352ef5cc95b315023614546f48efd83cbb6a",
+    "src\\drought\\backtest.py": "a113e5922363bf5f78d5421e7fcacad1c4135c6342a4d95c67a9279b523217fc",
+    "src\\drought\\crop_context.py": "078e6fa562396e8090c80cb0944ad9a13529f43d0e96aa9c25139f9f08a0e740",
+    "src\\drought\\cross_product.py": "6c596e74da718834c48020881399f4c5e3742aee4fba2c034b4b01170afa4486",
+    "src\\drought\\fetch_soil.py": "bfa2501a6c93557dd469c4810c5ddef233cac34956c391914c5989cbf9f575e2",
+    "src\\drought\\field_validation.py": "5342e583c86d7ceeb01486b60ac659a24c664db152951058bfb5ba017f5f51f8",
+    "src\\drought\\live_data.py": "a24b4e259eeba309041821a40c5f82712f79712d47bba8036cdc1ceca87e200f",
+    "src\\drought\\model.py": "8b8674b38c1488f349cbf39674021136e11a59402fee46a3a618cec8ed091958",
+    "src\\drought\\operations.py": "0f294ac1edc8cf384bcc97428504cd33ef4615bfb36d924ae543aa2091494ec1",
+    "src\\drought\\report.py": "7dfec4f2125dede123404bda971b41b2ae6392a2cf13fbd82d055e288cb63072",
+    "src\\drought\\run.py": "b358439606779647922bf17254c8981521fa2b6965cab8a14e75d2f1c532f336",
+    "src\\drought\\satellite_io.py": "ee65e07c301149ef928f80a0c763add49436c4ea21bb5385f00229106c503e4d"
+  }
+}

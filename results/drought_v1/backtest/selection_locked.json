@@ -1,0 +1,50 @@
+[
+  {
+    "horizon": 7,
+    "model": "Logistic soil",
+    "threshold": 0.3072168565626429,
+    "n": 375,
+    "drought_cases": 44,
+    "prevalence": 0.11733333333333333,
+    "macro_f1": 0.5243910688673389,
+    "drought_ap": 0.6805056387482226,
+    "drought_auc": 0.9501510574018127,
+    "brier": 0.06341664229529159,
+    "precision": 0.6222222222222222,
+    "recall": 0.6363636363636364,
+    "f1": 0.6292134831460674,
+    "warnings": 45
+  },
+  {
+    "horizon": 15,
+    "model": "HGB leaves7 soil+weather",
+    "threshold": 0.2213818160960728,
+    "n": 375,
+    "drought_cases": 47,
+    "prevalence": 0.12533333333333332,
+    "macro_f1": 0.5103544776119403,
+    "drought_ap": 0.6420552426962602,
+    "drought_auc": 0.945511157239232,
+    "brier": 0.0815565526407544,
+    "precision": 0.6078431372549019,
+    "recall": 0.6595744680851063,
+    "f1": 0.6326530612244898,
+    "warnings": 51
+  },
+  {
+    "horizon": 30,
+    "model": "HGB leaves7 soil",
+    "threshold": 0.03921396517965905,
+    "n": 375,
+    "drought_cases": 58,
+    "prevalence": 0.15466666666666667,
+    "macro_f1": 0.41717782669715814,
+    "drought_ap": 0.5837706751679835,
+    "drought_auc": 0.9009572500815838,
+    "brier": 0.13068035336601516,
+    "precision": 0.5342465753424658,
+    "recall": 0.6724137931034483,
+    "f1": 0.5954198473282443,
+    "warnings": 73
+  }
+]

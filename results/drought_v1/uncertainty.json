@@ -1,0 +1,65 @@
+[
+  {
+    "horizon": 7,
+    "seasons": 3,
+    "intervals": {
+      "precision": {
+        "low": null,
+        "high": null,
+        "valid_draws": 0
+      },
+      "recall": {
+        "low": null,
+        "high": null,
+        "valid_draws": 0
+      },
+      "brier_difference_vs_persistence": {
+        "low": 5.145670530806785e-07,
+        "high": 0.0007044773159911937,
+        "valid_draws": 1000
+      }
+    }
+  },
+  {
+    "horizon": 15,
+    "seasons": 3,
+    "intervals": {
+      "precision": {
+        "low": null,
+        "high": null,
+        "valid_draws": 0
+      },
+      "recall": {
+        "low": null,
+        "high": null,
+        "valid_draws": 0
+      },
+      "brier_difference_vs_persistence": {
+        "low": 6.379567463501766e-07,
+        "high": 0.002921010537976423,
+        "valid_draws": 1000
+      }
+    }
+  },
+  {
+    "horizon": 30,
+    "seasons": 3,
+    "intervals": {
+      "precision": {
+        "low": null,
+        "high": null,
+        "valid_draws": 0
+      },
+      "recall": {
+        "low": null,
+        "high": null,
+        "valid_draws": 0
+      },
+      "brier_difference_vs_persistence": {
+        "low": 3.3733407683837366e-07,
+        "high": 0.0016935642209303919,
+        "valid_draws": 1000
+      }
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "duplicate_prediction_keys": 0,
+  "independent_event_aggregation": "passed at all three horizons",
+  "target_window_consistency": "passed",
+  "sha256": {
+    "src\\detect\\causal_events.py": "548b9e7a18840e90aa4ff35feb35cff1bfa38bb39a6decf1b583e37a7cd06791",
+    "src\\detect\\event_sanity.py": "8634dd1eac78054c985eb427d74ed1de5a44db6c8432b0b19ca18473facbcdb2",
+    "docs\\DETECT_v2.md": "4f9347c2066dc8334759b0267e6e38d1e3b05aee84f9b3cc21868ca9e836b664",
+    "tests\\test_detect_events.py": "3c33cfc479de79a227c0008d6ce592974aa608878fd43b7ddc25a2c5f5e53112",
+    "data\\detect_v2\\labels.csv": "e2e23a40c8690bb238f66f217775b709cbe790db6b109c85aae7882be1a46a16",
+    "data\\detect_v2\\instances.csv.gz": "bbf92f6afd6edf734a34303bf3408487af66b5795c479d370d11152be2f63827",
+    "results\\detect_v2\\operating_points.json": "1c4b6c7f6026d065de434cdba30104e488f8284f795b641f139b12475d0882e5",
+    "results\\detect_v2\\predictions.csv.gz": "850af634953392489318b49bbaa27d7ed8216f7279e4a5a837feb553e0af4603",
+    "results\\detect_v2\\validation_predictions.csv.gz": "0677bc30c4fdda541299a5467da10b26935005052d9c1289cd7dfee23eff37fa",
+    "results\\detect_v2\\events.csv": "03924c6386cceecc9c9386772ef4b59be28306196cd1e8b30efafd21876aa1c8",
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\prepared\\cholasamudram.csv": "968ec3ce210df7980d7026eb6a3f3cd733de8980969bbf9570c077fb9149b563",
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\prepared\\Peddakadubur.csv": "af154762123c15affd2bc105bc9dcca8e8d4ee9a40417fe921d30edb16d5347f",
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\prepared\\sira.csv": "1ad12c5eacfca992f1f588f6bb62c3a9f4e89450f58c46d3ce53faeaf5bed4a6",
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\prepared\\kurnool_dinedevarapadu.csv": "94b829814f3406929e86919020215dea2257abfc461fe310350e4843255f12f7",
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\prepared\\Somandepalle.csv": "5228ca5c873945b8672409f7e64e2d04ad43da5a00fe0d3fa41d99cd7c07a266"
+  }
+}

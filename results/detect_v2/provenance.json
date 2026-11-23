@@ -1,0 +1,52 @@
+{
+  "train": [
+    2019,
+    2020,
+    2021
+  ],
+  "validation": [
+    2022
+  ],
+  "evaluation": [
+    2023,
+    2024,
+    2025
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "features": [
+    "irr",
+    "doy",
+    "ndvi",
+    "age",
+    "peak",
+    "trough",
+    "days_since_peak",
+    "drop",
+    "drop_share",
+    "chg15",
+    "chg30",
+    "anom",
+    "normal_dry",
+    "days_to_normal_dry",
+    "observed_dry",
+    "rain_jun_available_ratio",
+    "rain_since_oct",
+    "rain60",
+    "et0_30",
+    "tmax_30",
+    "spei"
+  ],
+  "sha256": {
+    "src\\detect\\causal_events.py": "0aa040551318ec056fd0cb28dfd5b61ef6bf840ef6cbe5406b0fce5a58d8e11b",
+    "docs\\DETECT_v2.md": "4ccaef00ca24ba5fd6418d1a32f7ac49615bdd44b99627272f74916c586e7238",
+    "data\\detect\\labels.csv": "44cdc2fda414e8d336e23037cf11cdae17569462d508221d1f63559009ddb22b",
+    "data\\gee_exports\\C3_points_timeseries.csv": "7abe8bb5be3ba6d911117fa62f302cfa8a997f83eda5f23f7ce612ddbcf77b71",
+    "data\\forecast\\point_curves.npz": "136e4c04285fc362eb480105b0c429b06bbfa3a87a43f5853e6271cdbadf6808"
+  }
+}

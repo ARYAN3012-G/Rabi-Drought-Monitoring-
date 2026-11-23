@@ -1,5 +1,90 @@
 # Rabi drought monitoring (separate project, pilot)
 
+**Complete clone-and-run handoff:** [installation, included datasets, saved models
+and research commands](docs/HANDOFF.md). All required historical weather inputs
+are now bundled; no parent weather repository is needed.
+
+## Run the completed research workflow
+
+```powershell
+python -B rabi.py run --update
+```
+
+This updates live soil data, runs the saved 7/15/30-day drought-risk models,
+attaches available crop observations, and creates a local report, CSV/GeoJSON
+outputs and an immutable run record. It does not retrain or alter frozen research
+data. For a verified historical example: `python -B rabi.py run --date 2026-03-01`.
+
+**[Start here: run guide, outputs and field-validation workflow](docs/RUN_RABI.md).**
+
+Software status: complete research workflow. Scientific status: regional
+soil-moisture risk, with agricultural-drought accuracy still unestablished.
+No forecast is issued outside Dec-Mar or with missing required inputs. Current
+satellite context needs a new Earth Engine export; the ready script and import
+command are included. Soil-only regional forecasts do not require that export.
+
+## New: regional soil-moisture drought prediction (23 Nov 2026)
+
+The water-shortage prediction experiment is now implemented separately from
+satellite early drying. It predicts 7/15/30-day **regional root-zone soil-moisture
+deficit**, with frozen reference data, saved models and an as-of-date command.
+See [execution summary](results/drought_v1/EXECUTION_SUMMARY.md),
+[results](results/drought_v1/DROUGHT_REPORT.md) and
+[development protocol](docs/DROUGHT_v1.md).
+
+**Status: experimental, not a proven best agricultural-drought model.** The
+fixed ERA5-Land definition yields no recent evaluation drought cases; NASA's
+soil product disagrees on some cases. In the earlier chronological diagnostic,
+a simple transition baseline outperformed the selected learned model on new
+onsets. These findings and all candidate scores are retained, not hidden.
+
+```powershell
+python -B -m src.drought.run predict --date 2026-03-01
+python -B -m src.drought.crop_context --date 2026-03-01
+python -B -m src.drought.audit
+```
+
+The example is a historical replay. New-season use requires fresh soil and
+corrected AgERA5 inputs. Outputs are regional risk plus satellite crop context;
+they do not assert verified drought in individual sampled fields.
+
+## Current executed result: corrected early-drying event audit (22 Nov 2026)
+
+The latest reproducible classifier evaluation is
+[`results/detect_v2/EVENT_REPORT.md`](results/detect_v2/EVENT_REPORT.md).
+It forecasts **satellite-defined early drying**, a candidate drought-risk signal,
+not field-verified agricultural drought. It preserves the separate frozen
+15-day NDVI forecasting experiment.
+
+Classifier v1 is superseded for operational claims: a completed-season status
+had entered its predictors, its references included validation-season data,
+and its first December issues used some unpublished rainfall. Version 2 fixes
+those inputs, selects models/thresholds on validation, and saves every operating
+point and prediction. Its stricter training reference changes the eligible
+population; the two runs are not a same-cohort comparison.
+
+Warnings are recounted **once per sampled point-season**, with event coverage,
+false warnings and first timely lead shown together. The corrected 30-day,
+validation-selected random forest catches 104 of 108 monitored events, but only
+104 of 332 warned point-seasons have a timely match (31.3%). An always-warn
+diagnostic catches 107 events while warning on 453 point-seasons. These numbers
+are historical development evidence, not prospective drought-detection accuracy.
+
+```powershell
+python -B src/detect/causal_events.py
+python -B src/detect/event_sanity.py
+$env:PYTEST_DISABLE_PLUGIN_AUTOLOAD='1'
+python -B -m pytest tests/test_detect_events.py -q -p no:cacheprovider
+```
+
+Rules and disclosure: [`docs/DETECT_v2.md`](docs/DETECT_v2.md). Saved event ledger:
+`results/detect_v2/events.csv`; thresholds and validation model selection:
+`results/detect_v2/operating_points.json`. Input/source hashes and independent
+aggregation checks are saved alongside. Neither government orders nor the
+UAV module are used to construct these labels.
+
+The earlier pilot and candidate-field workflow is retained below for provenance.
+
 A separate study for the rabi season (crops growing December - March) in the same 8 study areas as
 the kharif weather -> satellite system. It does **not** reuse the kharif system's fields, rules or
 models; it reuses only data tools (Sentinel-2 download and cleaning, AgERA5 weather, SPEI).

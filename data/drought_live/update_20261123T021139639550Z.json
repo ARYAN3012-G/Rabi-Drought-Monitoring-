@@ -1,0 +1,102 @@
+{
+  "end": "2026-11-15",
+  "requests": [
+    {
+      "cell": "Peddakadubur",
+      "request": {
+        "latitude": 15.8,
+        "longitude": 77.3,
+        "start_date": "2026-04-24",
+        "end_date": "2026-11-15",
+        "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+        "models": "era5_land",
+        "timezone": "GMT",
+        "elevation": "nan",
+        "cell_selection": "nearest"
+      },
+      "source": "https://archive-api.open-meteo.com/v1/archive",
+      "raw_file": "data\\drought_live\\raw\\20261123T021139639550Z_Peddakadubur.json",
+      "sha256": "94201913dd85560714984dd2eb04594bc387a485465748198237a1410af231ff",
+      "rows_added": 199,
+      "downloaded_at_utc": "20261123T021139639550Z"
+    },
+    {
+      "cell": "Somandepalle",
+      "request": {
+        "latitude": 14.0,
+        "longitude": 77.6,
+        "start_date": "2026-04-24",
+        "end_date": "2026-11-15",
+        "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+        "models": "era5_land",
+        "timezone": "GMT",
+        "elevation": "nan",
+        "cell_selection": "nearest"
+      },
+      "source": "https://archive-api.open-meteo.com/v1/archive",
+      "raw_file": "data\\drought_live\\raw\\20261123T021139639550Z_Somandepalle.json",
+      "sha256": "e9eb625a6f5f69ad1b64a91dd2fb71482d53b5ce7b75dea29e1fcca2d5e1e0ac",
+      "rows_added": 199,
+      "downloaded_at_utc": "20261123T021139639550Z"
+    },
+    {
+      "cell": "cholasamudram",
+      "request": {
+        "latitude": 13.8,
+        "longitude": 77.6,
+        "start_date": "2026-04-24",
+        "end_date": "2026-11-15",
+        "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+        "models": "era5_land",
+        "timezone": "GMT",
+        "elevation": "nan",
+        "cell_selection": "nearest"
+      },
+      "source": "https://archive-api.open-meteo.com/v1/archive",
+      "raw_file": "data\\drought_live\\raw\\20261123T021139639550Z_cholasamudram.json",
+      "sha256": "62ae0b4e24b55ce65bc0fbb2921a981dc228c37075e26d04acdcfe3ebc3a36cf",
+      "rows_added": 199,
+      "downloaded_at_utc": "20261123T021139639550Z"
+    },
+    {
+      "cell": "kurnool_dinedevarapadu",
+      "request": {
+        "latitude": 15.8,
+        "longitude": 78.0,
+        "start_date": "2026-04-24",
+        "end_date": "2026-11-15",
+        "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+        "models": "era5_land",
+        "timezone": "GMT",
+        "elevation": "nan",
+        "cell_selection": "nearest"
+      },
+      "source": "https://archive-api.open-meteo.com/v1/archive",
+      "raw_file": "data\\drought_live\\raw\\20261123T021139639550Z_kurnool_dinedevarapadu.json",
+      "sha256": "416fd1123d0055d192bf187874b7254207c1dd2ca427ac3a58c3a23c6a35baec",
+      "rows_added": 199,
+      "downloaded_at_utc": "20261123T021139639550Z"
+    },
+    {
+      "cell": "sira",
+      "request": {
+        "latitude": 13.8,
+        "longitude": 77.0,
+        "start_date": "2026-04-24",
+        "end_date": "2026-11-15",
+        "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+        "models": "era5_land",
+        "timezone": "GMT",
+        "elevation": "nan",
+        "cell_selection": "nearest"
+      },
+      "source": "https://archive-api.open-meteo.com/v1/archive",
+      "raw_file": "data\\drought_live\\raw\\20261123T021139639550Z_sira.json",
+      "sha256": "fc427f9358cc2d4a75413162c4fc4623d1c1beb7fc47c1961594f93026092119",
+      "rows_added": 199,
+      "downloaded_at_utc": "20261123T021139639550Z"
+    }
+  ],
+  "frozen_file_sha256": "43d6915a2d1f979f59ea5c7c57510955edb2afd7c789cc97c683f8e3ab8aa4da",
+  "status": "updated"
+}

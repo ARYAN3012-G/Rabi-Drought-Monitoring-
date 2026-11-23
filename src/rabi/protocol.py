@@ -36,7 +36,7 @@ TS_FILE = ROOT / "data" / "gee_exports" / "C2_candidate_timeseries_v2.csv"
 FROZEN = ROOT / "data" / "frozen" / "fields_v1.csv"
 DECL = ROOT / "data" / "official" / "rabi_declarations.csv"
 SITES_FILE = ROOT / "data" / "sites.csv"
-WEATHER_DIR = Path(os.environ.get("WEATHER_DIR", ROOT.parent / "data" / "processed" / "weather"))
+WEATHER_DIR = Path(os.environ.get("WEATHER_DIR", ROOT / "data" / "processed" / "weather"))
 
 # ---- FROZEN constants (protocol v1) -------------------------------------------------------
 REF_SEASONS = [2019, 2020, 2021, 2022]          # season y = 1 Oct y .. 30 Apr y+1

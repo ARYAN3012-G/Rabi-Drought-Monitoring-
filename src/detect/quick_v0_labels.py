@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-R = Path(r"c:/Users/aryan/OneDrive/Desktop/weather_module/rabi_module")
+R = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(R / "src" / "forecast"))
 import build_dataset as B  # noqa: E402
 

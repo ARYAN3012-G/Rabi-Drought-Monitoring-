@@ -1,0 +1,63 @@
+{
+  "issue_date": "2026-03-01",
+  "created_utc": "20261123T024701373793Z",
+  "software_status": "research monitoring workflow",
+  "research_status": "agricultural drought accuracy not established",
+  "run_status": "failed",
+  "files": {},
+  "forecast_status": "issued",
+  "forecasts_issued": 15,
+  "regional_warnings": 0,
+  "points_with_recent_satellite_image": 1349,
+  "point_population": 1350,
+  "update": null,
+  "issue_date_is_future": false,
+  "models": {
+    "7": {
+      "path": "models\\drought_v1\\forecast_7d.joblib",
+      "sha256": "4d99de4818bd087a613e15ea8c8d8a7e3bfdf06af65b3bd4c77c02dc100c78a5"
+    },
+    "15": {
+      "path": "models\\drought_v1\\forecast_15d.joblib",
+      "sha256": "87e49a94ba728333c726456f07b6729359f4e11e8137060b1431d08b185f7031"
+    },
+    "30": {
+      "path": "models\\drought_v1\\forecast_30d.joblib",
+      "sha256": "5711db2978710c69154f30579e62d4cf73e56f744e53c6df1f028b94db04c283"
+    }
+  },
+  "inputs": {
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\drought_v1\\soil_daily.csv.gz": {
+      "sha256": "43d6915a2d1f979f59ea5c7c57510955edb2afd7c789cc97c683f8e3ab8aa4da"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\drought_live\\soil_extension.csv.gz": {
+      "sha256": "bf0fd2656a9a4414f74ea818d09ffd831112e7df3709bf8fc313397301113728"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\data\\prepared\\Peddakadubur.csv": {
+      "sha256": "af154762123c15affd2bc105bc9dcca8e8d4ee9a40417fe921d30edb16d5347f"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\data\\prepared\\Somandepalle.csv": {
+      "sha256": "5228ca5c873945b8672409f7e64e2d04ad43da5a00fe0d3fa41d99cd7c07a266"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\data\\prepared\\cholasamudram.csv": {
+      "sha256": "968ec3ce210df7980d7026eb6a3f3cd733de8980969bbf9570c077fb9149b563"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\data\\prepared\\kurnool_dinedevarapadu.csv": {
+      "sha256": "94b829814f3406929e86919020215dea2257abfc461fe310350e4843255f12f7"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\data\\prepared\\sira.csv": {
+      "sha256": "1ad12c5eacfca992f1f588f6bb62c3a9f4e89450f58c46d3ce53faeaf5bed4a6"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\gee_exports\\C3_points_timeseries.csv": {
+      "sha256": "7abe8bb5be3ba6d911117fa62f302cfa8a997f83eda5f23f7ce612ddbcf77b71"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\config\\drought_cells.csv": {
+      "sha256": "b2d7d82e0350ea024a3158070a69c89a02e641ee6874e5f7a2a3994c32f8c757"
+    },
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\weather_module\\rabi_module\\data\\gee_exports\\C3_points.csv": {
+      "sha256": "1aa4960e1e02f0af68b0e8523cb599696652a6f8cb55e03db8db5cabc18b0711"
+    }
+  },
+  "outputs": {},
+  "error": "AttributeError: 'NoneType' object has no attribute 'get'"
+}

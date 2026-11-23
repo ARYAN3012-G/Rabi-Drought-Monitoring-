@@ -1,0 +1,17 @@
+{
+  "protocol_sha256": "29ba69c8208456eaa8e75b0fa6b13ed63d83e197d6889b77f96f25080af360ff",
+  "soil_sha256": "43d6915a2d1f979f59ea5c7c57510955edb2afd7c789cc97c683f8e3ab8aa4da",
+  "python": "3.10.11",
+  "sklearn": "1.7.2",
+  "source_sha256": {
+    "src\\drought\\model.py": "3b35529c6df4a820798ba42d6790f6c610bf2a7b91b3b8ac4c6cfde501e9955f",
+    "src\\drought\\run.py": "1ac77193caead86f4d0da8d632ece52f68741e600017b6fef17fc6b7f20e730e"
+  },
+  "weather_sha256": {
+    "Peddakadubur": "af154762123c15affd2bc105bc9dcca8e8d4ee9a40417fe921d30edb16d5347f",
+    "Somandepalle": "5228ca5c873945b8672409f7e64e2d04ad43da5a00fe0d3fa41d99cd7c07a266",
+    "cholasamudram": "968ec3ce210df7980d7026eb6a3f3cd733de8980969bbf9570c077fb9149b563",
+    "kurnool_dinedevarapadu": "94b829814f3406929e86919020215dea2257abfc461fe310350e4843255f12f7",
+    "sira": "1ad12c5eacfca992f1f588f6bb62c3a9f4e89450f58c46d3ce53faeaf5bed4a6"
+  }
+}

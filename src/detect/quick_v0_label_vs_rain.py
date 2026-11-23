@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 
 SP = Path(__file__).resolve().parents[2] / "results" / "detect_quick_v0"
-R = Path(r"c:/Users/aryan/OneDrive/Desktop/weather_module/rabi_module")
-W = Path(r"c:/Users/aryan/OneDrive/Desktop/weather_module/data/prepared")
+R = Path(__file__).resolve().parents[2]
+W = R / "data" / "prepared"
 o = pd.read_csv(SP / "labels_v0.csv")
 cell = pd.read_csv(R / "data" / "forecast" / "instances.csv.gz", usecols=["mandal", "cell"]).drop_duplicates()
 o = o.merge(cell, on="mandal")

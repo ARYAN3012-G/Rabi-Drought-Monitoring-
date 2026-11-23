@@ -1,0 +1,100 @@
+[
+  {
+    "path": "data/prepared/cholasamudram.csv",
+    "bytes": 4004429,
+    "sha256": "968ec3ce210df7980d7026eb6a3f3cd733de8980969bbf9570c077fb9149b563",
+    "source": "data/prepared/cholasamudram.csv",
+    "role": "corrected frozen-calibration weather"
+  },
+  {
+    "path": "data/prepared/kurnool_balaji_villas.csv",
+    "bytes": 4180244,
+    "sha256": "9cd7ce781802054e63db46d05a8a91c133bd49159a4b119690ec83cd68e8f563",
+    "source": "data/prepared/kurnool_balaji_villas.csv",
+    "role": "corrected frozen-calibration weather"
+  },
+  {
+    "path": "data/prepared/kurnool_dinedevarapadu.csv",
+    "bytes": 3754494,
+    "sha256": "94b829814f3406929e86919020215dea2257abfc461fe310350e4843255f12f7",
+    "source": "data/prepared/kurnool_dinedevarapadu.csv",
+    "role": "corrected frozen-calibration weather"
+  },
+  {
+    "path": "data/prepared/Peddakadubur.csv",
+    "bytes": 3695548,
+    "sha256": "af154762123c15affd2bc105bc9dcca8e8d4ee9a40417fe921d30edb16d5347f",
+    "source": "data/prepared/Peddakadubur.csv",
+    "role": "corrected frozen-calibration weather"
+  },
+  {
+    "path": "data/prepared/sira.csv",
+    "bytes": 3402566,
+    "sha256": "1ad12c5eacfca992f1f588f6bb62c3a9f4e89450f58c46d3ce53faeaf5bed4a6",
+    "source": "data/prepared/sira.csv",
+    "role": "corrected frozen-calibration weather"
+  },
+  {
+    "path": "data/prepared/Somandepalle.csv",
+    "bytes": 3500217,
+    "sha256": "5228ca5c873945b8672409f7e64e2d04ad43da5a00fe0d3fa41d99cd7c07a266",
+    "source": "data/prepared/Somandepalle.csv",
+    "role": "corrected frozen-calibration weather"
+  },
+  {
+    "path": "data/processed/weather/cholasamudram_with_spei.csv",
+    "bytes": 3988772,
+    "sha256": "c099866063326987508de6d54e2f34f5019ed4c32187b5726ecf73793412291b",
+    "source": "data/processed/weather/cholasamudram_with_spei.csv",
+    "role": "legacy protocol weather; retained for reproduction only"
+  },
+  {
+    "path": "data/processed/weather/kurnool_balaji_villas_with_spei.csv",
+    "bytes": 4130885,
+    "sha256": "7d058d068f037fc9fda5f10b711a68abc5483c13f92e782cc9092638eda33de3",
+    "source": "data/processed/weather/kurnool_balaji_villas_with_spei.csv",
+    "role": "legacy protocol weather; retained for reproduction only"
+  },
+  {
+    "path": "data/processed/weather/kurnool_dinedevarapadu_with_spei.csv",
+    "bytes": 3703831,
+    "sha256": "73c80278855e67886d2de55870626f95b422fba404aba7761b3f01e43c38165f",
+    "source": "data/processed/weather/kurnool_dinedevarapadu_with_spei.csv",
+    "role": "legacy protocol weather; retained for reproduction only"
+  },
+  {
+    "path": "data/processed/weather/kurnool_pulliah_with_spei.csv",
+    "bytes": 3841828,
+    "sha256": "e97034ef9b7986591d0ff00fd3dbb13896643c9d9f8afb210b557209750bf5f1",
+    "source": "data/processed/weather/kurnool_pulliah_with_spei.csv",
+    "role": "legacy protocol weather; retained for reproduction only"
+  },
+  {
+    "path": "data/processed/weather/lepakshi_with_spei.csv",
+    "bytes": 3595970,
+    "sha256": "3f00fabd59f0aead458a4537eb73f5ebcfdc54165f7f5aa28cb9f7c53c1c5574",
+    "source": "data/processed/weather/lepakshi_with_spei.csv",
+    "role": "legacy protocol weather; retained for reproduction only"
+  },
+  {
+    "path": "data/processed/weather/Peddakadubur_with_spei.csv",
+    "bytes": 3804749,
+    "sha256": "002005bd0a17e68880c90399a82768d7fc70e45c459386339840439c9f1d5ba4",
+    "source": "data/processed/weather/Peddakadubur_with_spei.csv",
+    "role": "legacy protocol weather; retained for reproduction only"
+  },
+  {
+    "path": "data/processed/weather/sira_with_spei.csv",
+    "bytes": 3399851,
+    "sha256": "479dbfd5fa5f414bcbbbc6b124cb613b6bc1a779e300106761226106e7aac4c1",
+    "source": "data/processed/weather/sira_with_spei.csv",
+    "role": "legacy protocol weather; retained for reproduction only"
+  },
+  {
+    "path": "data/processed/weather/Somandepalle_with_spei.csv",
+    "bytes": 3800665,
+    "sha256": "5c024bf766ae11c968b3b101ce65203b288cfac7e3a63fc401bc7b1c05ef2bbe",
+    "source": "data/processed/weather/Somandepalle_with_spei.csv",
+    "role": "legacy protocol weather; retained for reproduction only"
+  }
+]
