@@ -1,0 +1,67 @@
+{
+  "version": "detect_v3",
+  "improvements": [
+    "drop_rate feature (harvest-speed discriminator)",
+    "season_progress feature (late-season harvest filter)",
+    "anom_at_peak feature (pre-stress peak suppression)",
+    "rain_30_pre_peak feature (pre-season water deficit)",
+    "F0.5 threshold tuning (precision-weighted)",
+    "irrigation-stratified thresholds"
+  ],
+  "train": [
+    2019,
+    2020,
+    2021
+  ],
+  "validation": [
+    2022
+  ],
+  "evaluation": [
+    2023,
+    2024,
+    2025
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "features": [
+    "irr",
+    "doy",
+    "ndvi",
+    "age",
+    "peak",
+    "trough",
+    "days_since_peak",
+    "drop",
+    "drop_share",
+    "chg15",
+    "chg30",
+    "anom",
+    "normal_dry",
+    "days_to_normal_dry",
+    "observed_dry",
+    "rain_jun_available_ratio",
+    "rain_since_oct",
+    "rain60",
+    "et0_30",
+    "tmax_30",
+    "spei",
+    "drop_rate",
+    "season_progress",
+    "anom_at_peak",
+    "rain_30_pre_peak",
+    "irr_x_drop_rate"
+  ],
+  "threshold_metric": "recall_constrained_precision(min_recall=0.70)",
+  "sha256": {
+    "src\\detect\\causal_events_v3.py": "f293e91102bf9dcf74357570f7cb05638b4162d7e566b52cb9a67bb2083c8d97",
+    "docs\\DETECT_v2.md": "4f9347c2066dc8334759b0267e6e38d1e3b05aee84f9b3cc21868ca9e836b664",
+    "data\\detect\\labels.csv": "44cdc2fda414e8d336e23037cf11cdae17569462d508221d1f63559009ddb22b",
+    "data\\gee_exports\\C3_points_timeseries.csv": "7abe8bb5be3ba6d911117fa62f302cfa8a997f83eda5f23f7ce612ddbcf77b71",
+    "data\\forecast\\point_curves.npz": "136e4c04285fc362eb480105b0c429b06bbfa3a87a43f5853e6271cdbadf6808"
+  }
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "horizon": 7,
+    "selected_model": "Random forest",
+    "selection": "highest validation average precision",
+    "threshold_method": "Recall-constrained precision maximisation (min_recall=0.70)",
+    "weights": {
+      "Logistic regression": 0.11330399227999911,
+      "Random forest": 0.524136984660778,
+      "XGBoost": 0.3625590230592229
+    },
+    "validation_ap": {
+      "Logistic regression": 0.04481408828539025,
+      "Random forest": 0.2073070915822678,
+      "XGBoost": 0.14339964321724058,
+      "Ensemble equal": 0.13285726012131716,
+      "Ensemble weighted": 0.1560564177523055
+    },
+    "n_train": 4082,
+    "n_val": 2440,
+    "thresholds": {
+      "Logistic regression": 0.6435066321952525,
+      "Logistic regression_stratified": {
+        "all": 0.6435066321952525,
+        "irr": 0.7463891909001307,
+        "rai": 0.7781661513354831
+      },
+      "Random forest": 0.1655514931680957,
+      "Random forest_stratified": {
+        "all": 0.1655514931680957,
+        "irr": 0.19946740648146954,
+        "rai": 0.1290530372260162
+      },
+      "XGBoost": 0.027196688735857618,
+      "XGBoost_stratified": {
+        "all": 0.027196688735857618,
+        "irr": 0.03568347118794929,
+        "rai": 0.02880922794342043
+      },
+      "Ensemble equal": 0.3218843644337052,
+      "Ensemble equal_stratified": {
+        "all": 0.3218843644337052,
+        "irr": 0.33544580154974574,
+        "rai": 0.36944259286263637
+      },
+      "Ensemble weighted": 0.19081700478693486,
+      "Ensemble weighted_stratified": {
+        "all": 0.19081700478693486,
+        "irr": 0.22405191245595718,
+        "rai": 0.1750644713159846
+      },
+      "Below-normal baseline": -0.15671521366601465,
+      "Below-normal baseline_stratified": {
+        "all": -0.15671521366601465,
+        "irr": -0.09345498989525125,
+        "rai": -0.3658049824108787
+      },
+      "Drop baseline": 0.045343733470000945,
+      "Drop baseline_stratified": {
+        "all": 0.045343733470000945,
+        "irr": 0.08505048895064092,
+        "rai": 0.003457745264794616
+      },
+      "Drop-rate baseline": 0.001284458205678062,
+      "Drop-rate baseline_stratified": {
+        "all": 0.001284458205678062,
+        "irr": 0.002101130450839297,
+        "rai": 5.0446776730265194e-05
+      },
+      "Early-drying rule": 0.5,
+      "Zero-onset baseline": 0.5
+    }
+  },
+  {
+    "horizon": 15,
+    "selected_model": "Ensemble weighted",
+    "selection": "highest validation average precision",
+    "threshold_method": "Recall-constrained precision maximisation (min_recall=0.70)",
+    "weights": {
+      "Logistic regression": 0.12014447886984295,
+      "Random forest": 0.4380490243580244,
+      "XGBoost": 0.44180649677213274
+    },
+    "validation_ap": {
+      "Logistic regression": 0.08092304581413728,
+      "Random forest": 0.29504694348347865,
+      "XGBoost": 0.2975777806486359,
+      "Ensemble equal": 0.28827611969903655,
+      "Ensemble weighted": 0.3267064659409765
+    },
+    "n_train": 4082,
+    "n_val": 2440,
+    "thresholds": {
+      "Logistic regression": 0.6795789686673445,
+      "Logistic regression_stratified": {
+        "all": 0.6795789686673445,
+        "irr": 0.5283265205312778,
+        "rai": 0.7104894031609792
+      },
+      "Random forest": 0.22957244365555632,
+      "Random forest_stratified": {
+        "all": 0.22957244365555632,
+        "irr": 0.230199431202947,
+        "rai": 0.26249986288215843
+      },
+      "XGBoost": 0.042074944041669365,
+      "XGBoost_stratified": {
+        "all": 0.042074944041669365,
+        "irr": 0.12052635632455351,
+        "rai": 0.03603043496608742
+      },
+      "Ensemble equal": 0.38144938605082135,
+      "Ensemble equal_stratified": {
+        "all": 0.38144938605082135,
+        "irr": 0.38026083923143783,
+        "rai": 0.4298351459228333
+      },
+      "Ensemble weighted": 0.22096438739711513,
+      "Ensemble weighted_stratified": {
+        "all": 0.22096438739711513,
+        "irr": 0.23134058868633023,
+        "rai": 0.28413083053663013
+      },
+      "Below-normal baseline": -0.1720962948636881,
+      "Below-normal baseline_stratified": {
+        "all": -0.1720962948636881,
+        "irr": -0.12969228959040188,
+        "rai": -0.3818611197903836
+      },
+      "Drop baseline": 0.0,
+      "Drop baseline_stratified": {
+        "all": 0.0,
+        "irr": 0.0,
+        "rai": 0.003457745264794616
+      },
+      "Drop-rate baseline": 0.0,
+      "Drop-rate baseline_stratified": {
+        "all": 0.0,
+        "irr": 0.0,
+        "rai": 5.0446776730265194e-05
+      },
+      "Early-drying rule": 0.5,
+      "Zero-onset baseline": 0.5
+    }
+  },
+  {
+    "horizon": 30,
+    "selected_model": "Random forest",
+    "selection": "highest validation average precision",
+    "threshold_method": "Recall-constrained precision maximisation (min_recall=0.70)",
+    "weights": {
+      "Logistic regression": 0.1793215786445682,
+      "Random forest": 0.42486073951733966,
+      "XGBoost": 0.3958176818380922
+    },
+    "validation_ap": {
+      "Logistic regression": 0.16101977578593632,
+      "Random forest": 0.3814988777949917,
+      "XGBoost": 0.35541999386479994,
+      "Ensemble equal": 0.35259345496780264,
+      "Ensemble weighted": 0.367054554933223
+    },
+    "n_train": 4082,
+    "n_val": 2440,
+    "thresholds": {
+      "Logistic regression": 0.729518060913284,
+      "Logistic regression_stratified": {
+        "all": 0.729518060913284,
+        "irr": 0.7298528346631252,
+        "rai": 0.8973906048963025
+      },
+      "Random forest": 0.3128586148513941,
+      "Random forest_stratified": {
+        "all": 0.3128586148513941,
+        "irr": 0.31833864307077514,
+        "rai": 0.31465431495900187
+      },
+      "XGBoost": 0.10958565138280481,
+      "XGBoost_stratified": {
+        "all": 0.10958565138280481,
+        "irr": 0.15358029007911692,
+        "rai": 0.1986829447746282
+      },
+      "Ensemble equal": 0.4083890951299746,
+      "Ensemble equal_stratified": {
+        "all": 0.4083890951299746,
+        "irr": 0.4189512777317085,
+        "rai": 0.49259889238431964
+      },
+      "Ensemble weighted": 0.31963165857262127,
+      "Ensemble weighted_stratified": {
+        "all": 0.31963165857262127,
+        "irr": 0.34499371647011995,
+        "rai": 0.41911801240367424
+      },
+      "Below-normal baseline": -0.4847741400177831,
+      "Below-normal baseline_stratified": {
+        "all": -0.4847741400177831,
+        "irr": -0.15879209473225103,
+        "rai": -0.4680869834691789
+      },
+      "Drop baseline": 0.0,
+      "Drop baseline_stratified": {
+        "all": 0.0,
+        "irr": 0.0,
+        "rai": 0.0
+      },
+      "Drop-rate baseline": 0.0,
+      "Drop-rate baseline_stratified": {
+        "all": 0.0,
+        "irr": 0.0,
+        "rai": 0.0
+      },
+      "Early-drying rule": 0.5,
+      "Zero-onset baseline": 0.5
+    }
+  }
+]

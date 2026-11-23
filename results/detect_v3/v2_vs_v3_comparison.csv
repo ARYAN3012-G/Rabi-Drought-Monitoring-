@@ -1,0 +1,4 @@
+horizon,model_v2,caught_v2,monitored_events,recall_all_events,warned_v2,precision_v2,lead_v2,model_v3,caught_v3,warned_v3,precision_v3,lead_v3,precision_gain,recall_loss
+7,Random forest,102,108,0.9444444444444444,331,0.3081570996978852,5.0,Random forest,66,204,0.3235294117647059,5.0,0.015,0.333
+15,Random forest,101,108,0.9351851851851852,305,0.3311475409836065,12.0,Ensemble weighted,78,196,0.3979591836734694,12.0,0.067,0.213
+30,Random forest,104,108,0.9629629629629628,332,0.3132530120481928,27.0,Random forest,80,207,0.3864734299516908,22.0,0.073,0.222
