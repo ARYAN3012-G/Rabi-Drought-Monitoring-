@@ -54,7 +54,7 @@ The project includes an operational early-drying event detection lineage (`v2` �
 - **`detect_v2` (Baseline):** Raw optical NDVI drops suffered from a **68.7% false alarm rate** (332 warnings, 31.3% precision).
 - **`detect_v3` (Phenology & Tuning):** Added decline speed (`drop_rate`) and recall-constrained thresholding (61.4% false alarms, 207 warnings).
 - **`detect_v4` (Soil Moisture & Crop Priors):** Added ERA5-Land rootzone moisture and reference phenological archetypes (58.6% false alarms, 157 warnings).
-- **`detect_v5` (Physics-Guided Soil Gate):** Enforces an agronomic hard constraint (`rootzone < 0.30 m³/m³`). Vetoes false alarms on wet, harvested black-cotton soils, dropping the false alarm rate to **41.0%** and elevating warning precision to **59.0%** (83 warnings, 21-day median lead).
+- **`detect_v5` (Physics-Guided Soil Gate & Calibrated Stratification):** Enforces an agronomic hard constraint (`rootzone < 0.30 m³/m³`) and unskewed stratification on irrigated fields. Vetoes false alarms on wet, harvested black-cotton soils, dropping the false alarm rate to **27.8%** and elevating warning precision to **72.2%** (54 warnings, 39 events caught, 18-day median lead).
 
 Run detect_v5 or compare the lineage:
 ```powershell
