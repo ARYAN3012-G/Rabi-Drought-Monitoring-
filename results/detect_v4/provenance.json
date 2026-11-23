@@ -1,0 +1,53 @@
+{
+  "version": "detect_v4",
+  "improvements": [
+    "ERA5-Land rootzone soil moisture (0-100cm)",
+    "ERA5-Land surface soil moisture (0-7cm)",
+    "15-day rootzone trend",
+    "Crop-type phenological priors from reference training seasons 2019-2021",
+    "In-season phenological stage ratio",
+    "Harvest risk factor (interaction of lifecycle progress with wet soil)"
+  ],
+  "features": [
+    "irr",
+    "doy",
+    "ndvi",
+    "age",
+    "peak",
+    "trough",
+    "days_since_peak",
+    "drop",
+    "drop_share",
+    "chg15",
+    "chg30",
+    "anom",
+    "normal_dry",
+    "days_to_normal_dry",
+    "observed_dry",
+    "rain_jun_available_ratio",
+    "rain_since_oct",
+    "rain60",
+    "et0_30",
+    "tmax_30",
+    "spei",
+    "drop_rate",
+    "season_progress",
+    "anom_at_peak",
+    "rain_30_pre_peak",
+    "irr_x_drop_rate",
+    "rootzone",
+    "soil_moisture_0_to_7cm_mean",
+    "rootzone_trend_15d",
+    "prior_peak_doy",
+    "prior_cycle_len",
+    "crop_pulse_prior",
+    "pheno_stage_ratio",
+    "harvest_risk_factor"
+  ],
+  "sha256": {
+    "src\\detect\\causal_events_v4.py": "0b04570621f51a146f168dd57f91d150af60b0df42a01b8ad8475a902b0b8b3a",
+    "docs\\DETECT_v3.md": "590a45fcc3bc390b97232a4050193d2b0606b37fc0fd94a150d3c05b3a89a443",
+    "data\\detect\\labels.csv": "44cdc2fda414e8d336e23037cf11cdae17569462d508221d1f63559009ddb22b",
+    "data\\drought_v1\\soil_daily.csv.gz": "43d6915a2d1f979f59ea5c7c57510955edb2afd7c789cc97c683f8e3ab8aa4da"
+  }
+}

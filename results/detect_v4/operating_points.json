@@ -1,0 +1,158 @@
+[
+  {
+    "horizon": 7,
+    "selected_model": "Ensemble weighted",
+    "selection": "highest validation average precision",
+    "threshold_method": "Recall-constrained precision maximisation (min_recall=0.70)",
+    "weights": {
+      "Logistic regression": 0.171873777553584,
+      "Random forest": 0.4430625952483675,
+      "XGBoost": 0.3850636271980486
+    },
+    "validation_ap": {
+      "Logistic regression": 0.08082019332957029,
+      "Random forest": 0.20834129042116648,
+      "XGBoost": 0.18106844009191278,
+      "Ensemble equal": 0.20660431750810204,
+      "Ensemble weighted": 0.22236204454789196
+    },
+    "n_train": 4082,
+    "n_val": 2440,
+    "thresholds": {
+      "Logistic regression": 0.7277391921323046,
+      "Logistic regression_stratified": {
+        "all": 0.7277391921323046,
+        "irr": 0.8015051351378008,
+        "rai": 0.7708386968334793
+      },
+      "Random forest": 0.18453543820854793,
+      "Random forest_stratified": {
+        "all": 0.18453543820854793,
+        "irr": 0.21625067569433512,
+        "rai": 0.16003405057909761
+      },
+      "XGBoost": 0.04099573437124521,
+      "XGBoost_stratified": {
+        "all": 0.04099573437124521,
+        "irr": 0.05515171550214321,
+        "rai": 0.03433990508317956
+      },
+      "Ensemble equal": 0.3319815737036265,
+      "Ensemble equal_stratified": {
+        "all": 0.3319815737036265,
+        "irr": 0.332076435905343,
+        "rai": 0.4075884738095284
+      },
+      "Ensemble weighted": 0.23635868562407908,
+      "Ensemble weighted_stratified": {
+        "all": 0.23635868562407908,
+        "irr": 0.2350860382761304,
+        "rai": 0.28109024903234564
+      }
+    }
+  },
+  {
+    "horizon": 15,
+    "selected_model": "Ensemble weighted",
+    "selection": "highest validation average precision",
+    "threshold_method": "Recall-constrained precision maximisation (min_recall=0.70)",
+    "weights": {
+      "Logistic regression": 0.15295392303550875,
+      "Random forest": 0.4132755105900499,
+      "XGBoost": 0.4337705663744413
+    },
+    "validation_ap": {
+      "Logistic regression": 0.11961206870270669,
+      "Random forest": 0.32318712580106407,
+      "XGBoost": 0.33921454093300096,
+      "Ensemble equal": 0.33014738672250127,
+      "Ensemble weighted": 0.3406369422681477
+    },
+    "n_train": 4082,
+    "n_val": 2440,
+    "thresholds": {
+      "Logistic regression": 0.4000051319305754,
+      "Logistic regression_stratified": {
+        "all": 0.4000051319305754,
+        "irr": 0.40990954623875103,
+        "rai": 0.8791616464944044
+      },
+      "Random forest": 0.19487003474000897,
+      "Random forest_stratified": {
+        "all": 0.19487003474000897,
+        "irr": 0.19511844785478624,
+        "rai": 0.2860941754578733
+      },
+      "XGBoost": 0.0651174358278515,
+      "XGBoost_stratified": {
+        "all": 0.0651174358278515,
+        "irr": 0.06440775305032732,
+        "rai": 0.08094995290041004
+      },
+      "Ensemble equal": 0.2215611645324461,
+      "Ensemble equal_stratified": {
+        "all": 0.2215611645324461,
+        "irr": 0.21740811522714087,
+        "rai": 0.4436217819652711
+      },
+      "Ensemble weighted": 0.16293899527629374,
+      "Ensemble weighted_stratified": {
+        "all": 0.16293899527629374,
+        "irr": 0.15971710202659428,
+        "rai": 0.3117582913154679
+      }
+    }
+  },
+  {
+    "horizon": 30,
+    "selected_model": "XGBoost",
+    "selection": "highest validation average precision",
+    "threshold_method": "Recall-constrained precision maximisation (min_recall=0.70)",
+    "weights": {
+      "Logistic regression": 0.21970975510995036,
+      "Random forest": 0.3826749355509399,
+      "XGBoost": 0.3976153093391097
+    },
+    "validation_ap": {
+      "Logistic regression": 0.21692064909595538,
+      "Random forest": 0.3778170676623878,
+      "XGBoost": 0.39256778083961635,
+      "Ensemble equal": 0.3834986720443653,
+      "Ensemble weighted": 0.38777315451199135
+    },
+    "n_train": 4082,
+    "n_val": 2440,
+    "thresholds": {
+      "Logistic regression": 0.472472044137946,
+      "Logistic regression_stratified": {
+        "all": 0.472472044137946,
+        "irr": 0.5920400408625114,
+        "rai": 0.8801261375762351
+      },
+      "Random forest": 0.3045128271252753,
+      "Random forest_stratified": {
+        "all": 0.3045128271252753,
+        "irr": 0.31842148567355955,
+        "rai": 0.3755997925257365
+      },
+      "XGBoost": 0.1519188657402989,
+      "XGBoost_stratified": {
+        "all": 0.1519188657402989,
+        "irr": 0.06240975841879842,
+        "rai": 0.23311340868473357
+      },
+      "Ensemble equal": 0.35676420709325124,
+      "Ensemble equal_stratified": {
+        "all": 0.35676420709325124,
+        "irr": 0.3595124974495514,
+        "rai": 0.5185719190270334
+      },
+      "Ensemble weighted": 0.30470003940178275,
+      "Ensemble weighted_stratified": {
+        "all": 0.30470003940178275,
+        "irr": 0.32696495438370426,
+        "rai": 0.48260249929182686
+      }
+    }
+  }
+]

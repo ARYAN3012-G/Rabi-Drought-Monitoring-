@@ -19,11 +19,19 @@ def main():
     q.add_argument('--output',default='observations/field_observations.csv')
     q=sub.add_parser('validate',help='Compare a run with independently collected field observations')
     q.add_argument('--run-dir',required=True);q.add_argument('--observations',required=True)
+    q=sub.add_parser('detect',help='Run rabi early-drying risk model (detect_v5: soil moisture gate & crop priors)')
+    q.add_argument('--compare',action='store_true',help='Compare lineage across v2, v3, v4, and v5')
     args=p.parse_args()
     try:
         if args.command=='run':
             from src.drought.operations import run
             run(args.date,args.update)
+        elif args.command=='detect':
+            from src.detect import causal_events_v5
+            if args.compare:
+                causal_events_v5.compare_all_versions()
+            else:
+                causal_events_v5.main()
         elif args.command=='update-soil':
             from src.drought.operations import normalize_date,local_today
             from src.drought.live_data import update_soil
