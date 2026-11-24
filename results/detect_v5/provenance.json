@@ -36,10 +36,15 @@
     "prior_cycle_len",
     "crop_pulse_prior",
     "pheno_stage_ratio",
-    "harvest_risk_factor"
+    "harvest_risk_factor",
+    "inferred_crop_early",
+    "inferred_crop_mid",
+    "inferred_crop_late",
+    "spei_drought_flag",
+    "soil_depth_divergence"
   ],
   "sha256": {
-    "src\\detect\\causal_events_v5.py": "90924bc16a3a769713132a1c96a299f5ef632f3797051737b0b0b741a6791846",
+    "src\\detect\\causal_events_v5.py": "da317c479f11fb63bc401b629cdf90f13f5dcf23406ac6d2df406098aa53e24e",
     "data\\detect_v4\\instances.csv.gz": "a5eae2d713059596dd700d9c3ec6bb502ec484e63ebfd55c9fa0fdabc2161241"
   }
 }

@@ -8,15 +8,15 @@
 
 | horizon | model | monitored_events | caught_events | recall_all_events | warned_point_seasons | warning_precision | median_lead |
 |---|---|---|---|---|---|---|---|
-| 7 | Random forest [v4_base] | 108 | 48 | 0.444 | 167 | 0.287 | 3.500 |
-| 7 | Random forest [v5_soil_veto] | 108 | 39 | 0.361 | 95 | 0.411 | 3.000 |
-| 7 | Random forest [v5_soil_veto_and_confirmation] | 108 | 1 | 0.009 | 4 | 0.250 | 6.000 |
-| 15 | Random forest [v4_base] | 108 | 59 | 0.546 | 138 | 0.428 | 11.000 |
-| 15 | Random forest [v5_soil_veto] | 108 | 47 | 0.435 | 78 | 0.603 | 11.000 |
-| 15 | Random forest [v5_soil_veto_and_confirmation] | 108 | 1 | 0.009 | 8 | 0.125 | 1.000 |
-| 30 | Random forest [v4_base] | 108 | 51 | 0.472 | 96 | 0.531 | 20.000 |
-| 30 | Random forest [v5_soil_veto] | 108 | 39 | 0.361 | 54 | 0.722 | 18.000 |
-| 30 | Random forest [v5_soil_veto_and_confirmation] | 108 | 1 | 0.009 | 4 | 0.250 | 18.000 |
+| 7 | Random forest [v4_base] | 108 | 48 | 0.444 | 170 | 0.282 | 4.000 |
+| 7 | Random forest [v5_soil_veto] | 108 | 37 | 0.343 | 89 | 0.416 | 3.000 |
+| 7 | Random forest [v5_soil_veto_and_confirmation] | 108 | 1 | 0.009 | 2 | 0.500 | 6.000 |
+| 15 | Random forest [v4_base] | 108 | 64 | 0.593 | 171 | 0.374 | 11.000 |
+| 15 | Random forest [v5_soil_veto] | 108 | 52 | 0.481 | 97 | 0.536 | 11.000 |
+| 15 | Random forest [v5_soil_veto_and_confirmation] | 108 | 2 | 0.019 | 12 | 0.167 | 4.000 |
+| 30 | Random forest [v4_base] | 108 | 62 | 0.574 | 127 | 0.488 | 21.500 |
+| 30 | Random forest [v5_soil_veto] | 108 | 48 | 0.444 | 69 | 0.696 | 23.000 |
+| 30 | Random forest [v5_soil_veto_and_confirmation] | 108 | 7 | 0.065 | 11 | 0.636 | 27.000 |
 
 ## Interpretation
 

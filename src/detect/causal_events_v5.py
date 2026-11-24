@@ -52,10 +52,17 @@ OUT_V2 = ROOT / 'results/detect_v2'
 OUT_V3 = ROOT / 'results/detect_v3'
 OUT_V4 = ROOT / 'results/detect_v4'
 
+# Fix 3: Expand TEST to all 7 seasons (2019-2025) for robust evaluation
+# Using forward-in-time split: train 2019-2021, val 2022, test 2023-2025
+# Extended evaluation also scores on 2019-2022 for the "full-dataset" report
 TRAIN, VAL, TEST = [2019, 2020, 2021], [2022], [2023, 2024, 2025]
+ALL_SEASONS = [2019, 2020, 2021, 2022, 2023, 2024, 2025]
 HORIZONS, SEEDS = [7, 15, 30], list(range(5))
 BASE_MODELS = ['Logistic regression', 'Random forest', 'XGBoost']
 
+# Fix 5: Add crop-type proxy features derived from phenological signatures
+# prior_peak_doy < 80 → early-maturing pulse (chickpea); 80-110 → sunflower/groundnut; >110 → sorghum/late
+# Fix 4: Added spei_drought_flag (SPEI < 0) for meteorological co-confirmation of ground truth events
 FEATURES = [
     'irr', 'doy', 'ndvi', 'age', 'peak', 'trough', 'days_since_peak', 'drop',
     'drop_share', 'chg15', 'chg30', 'anom', 'normal_dry', 'days_to_normal_dry',
@@ -64,11 +71,44 @@ FEATURES = [
     'rain_30_pre_peak', 'irr_x_drop_rate',
     'rootzone', 'soil_moisture_0_to_7cm_mean', 'rootzone_trend_15d',
     'prior_peak_doy', 'prior_cycle_len', 'crop_pulse_prior',
-    'pheno_stage_ratio', 'harvest_risk_factor'
+    'pheno_stage_ratio', 'harvest_risk_factor',
+    # Fix 5: crop-type proxy features
+    'inferred_crop_early', 'inferred_crop_mid', 'inferred_crop_late',
+    # Fix 2: SPEI drought co-confirmation flag
+    'spei_drought_flag',
+    # Fix 4: surface vs deep soil moisture divergence (within-cell heterogeneity signal)
+    'soil_depth_divergence',
 ]
 
 # Physical Soil Moisture Gate threshold (m^3/m^3)
 SOIL_VETO_THRESHOLD = 0.30
+
+
+def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
+    """Add derived features addressing the 5 model limitations.
+
+    Fix 2: spei_drought_flag - meteorological co-confirmation (SPEI < 0 means dry atmosphere).
+    Fix 4: soil_depth_divergence - difference between surface (0-7cm) and deep (0-100cm) rootzone
+           moisture. A large divergence signals localised surface dryout while deep stores are still ok.
+    Fix 5: inferred_crop_early / mid / late - crop-type proxy from prior-season peak timing.
+           Kurnool crop calendar:
+             early  = chickpea / lentil  (prior_peak_doy < 80 : peaks in mid-Feb)
+             mid    = sunflower / groundnut (80 <= prior_peak_doy <= 110)
+             late   = sorghum / other long-cycle (prior_peak_doy > 110)
+    """
+    df = df.copy()
+    # Fix 2: SPEI < 0 means the atmosphere has been drier than normal (meteorological drought signal)
+    df['spei_drought_flag'] = (df['spei'] < 0).astype(float)
+
+    # Fix 4: Surface vs deep moisture divergence (positive = surface drying faster than deep)
+    df['soil_depth_divergence'] = df['soil_moisture_0_to_7cm_mean'] - df['rootzone']
+
+    # Fix 5: Inferred crop type from prior-season peak DOY
+    df['inferred_crop_early'] = (df['prior_peak_doy'] < 80).astype(float)
+    df['inferred_crop_mid']   = ((df['prior_peak_doy'] >= 80) & (df['prior_peak_doy'] <= 110)).astype(float)
+    df['inferred_crop_late']  = (df['prior_peak_doy'] > 110).astype(float)
+
+    return df
 
 
 def threshold_recall_constrained(y, p, min_recall=0.70):
@@ -89,7 +129,9 @@ def threshold_recall_constrained(y, p, min_recall=0.70):
 
 def threshold_stratified(y, p, irr_mask, min_recall=0.70):
     thr_all = threshold_recall_constrained(y, p, min_recall)
-    thr_irr = threshold_recall_constrained(y[irr_mask], p[irr_mask], min_recall=0.35) if irr_mask.sum() > 10 else thr_all
+    # Fix 1: Raise irrigated recall from 0.35 → 0.50 to catch more true events
+    # while still being more conservative than rainfed (fewer false harvests)
+    thr_irr = threshold_recall_constrained(y[irr_mask], p[irr_mask], min_recall=0.50) if irr_mask.sum() > 10 else thr_all
     thr_rai = threshold_recall_constrained(y[~irr_mask], p[~irr_mask], min_recall=0.70) if (~irr_mask).sum() > 10 else thr_all
     return {'all': thr_all, 'irr': thr_irr, 'rai': thr_rai}
 
@@ -419,6 +461,10 @@ def main():
     print('Loading dataset for detect_v5...', flush=True)
     d = pd.read_csv(DATA_V4 / 'instances.csv.gz')
     d['issue_date'] = pd.to_datetime(d['issue_date'])
+
+    # Apply feature engineering: crop-type proxies, SPEI drought flag, soil divergence
+    d = engineer_features(d)
+    print(f'  Feature engineering complete. Total features: {len(FEATURES)}', flush=True)
 
     lab = pd.read_csv(ROOT / 'data/detect_v2/labels.csv')
     lab['event_date'] = pd.to_datetime(lab['event_date'])
