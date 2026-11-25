@@ -1,0 +1,1393 @@
+{
+ "accessed_utc": "2026-11-23T16:09:13.418088+00:00",
+ "boundaries": "data\\external\\boundaries\\ind_adm2.geojson",
+ "step_deg": 0.3,
+ "requests": [
+  {
+   "file": "data\\drought2\\raw\\grid_000_1990.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "1990-09-01",
+    "end_date": "1991-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "43de679f11b0d087b54b53074f61464cf22c4411db6c1307478a2c4fa94d067c"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_1990.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "1990-09-01",
+    "end_date": "1991-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "f730fc68b42328dfa03c213555ef5106c364efec1a04319cc2e876d0a54090cd"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_1990.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "1990-09-01",
+    "end_date": "1991-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "c4e9ebb5660360a41694e989c1709b0b81dc66a2a437eab43e13d13f06d36373"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_1991.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "1991-09-01",
+    "end_date": "1992-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "fb5a01645127ff4aa452da69b851531531702ebf77678acbe61f902dc2a6b79c"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_1991.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "1991-09-01",
+    "end_date": "1992-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "09c4d6893a585cc18e1a3e8240e115a3fc2e1fda860127aa6f93f31598cbeef0"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_1991.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "1991-09-01",
+    "end_date": "1992-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "1f13d41b96b8b4c30d59dd29b187edddd25879fb2417e8f9c1983eaacc84a62d"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_1992.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "1992-09-01",
+    "end_date": "1993-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "0326335513a4fe3ef4bf97966f8e89b97d34ffb07ceb0663bea99c1b6d0257db"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_1992.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "1992-09-01",
+    "end_date": "1993-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "509c3872357f4e39d3b7185741d7b98e68272f664d42dc5fdd6d17db07f5b72e"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_1992.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "1992-09-01",
+    "end_date": "1993-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "815083616b5dbeafe392f3cbb3b7d4308b1b6ebc2719e46c2d66bc0057fad296"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_1993.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "1993-09-01",
+    "end_date": "1994-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "d48cb3e328b1a926a9872b40bcdb3765ef94312f33782fc4704820fdb75d8b09"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_1993.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "1993-09-01",
+    "end_date": "1994-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "8fe6a654b5365302e408968314c3604eb1abe2b31ce147dd38607ff65597c77e"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_1993.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "1993-09-01",
+    "end_date": "1994-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "6131476f652849697fefe6cc97a4a96782e1c91139d4854a226da56c40906fe3"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_1994.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "1994-09-01",
+    "end_date": "1995-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "e6082a9121804f2294c0ed5be10143f5cdb25f2250adbef44d590abc0e31fd3d"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_1994.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "1994-09-01",
+    "end_date": "1995-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "197ef5bd9ccefd4c0e7c5f7c2f5ed0fef64567466a2dbddd865591038dc352ad"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_1994.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "1994-09-01",
+    "end_date": "1995-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "5960fd6d770bcb526fcd5603175dfeb97bd10c85caf32f795a5a2ffc564e85dd"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_1995.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "1995-09-01",
+    "end_date": "1996-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "ce0903c6c92b38d7c316449e9391cf6e95161169ff154bdb9ebb567e60856ad1"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_1995.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "1995-09-01",
+    "end_date": "1996-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "d55e7563c854f2571d38703b33276e99db399b8516aefbe2d36bfd76a081c849"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_1995.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "1995-09-01",
+    "end_date": "1996-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "50e23702c4aa2bb165383c77aa203c97adf4d936dd929e01206bb40a68168f4c"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_1996.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "1996-09-01",
+    "end_date": "1997-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "389210c98cc88d852a6f856b8612cdc17be747a777e2d7315b55573acc42662b"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_1996.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "1996-09-01",
+    "end_date": "1997-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "75149ef540e508921eb5bcacf516a5f6cc70e6fcdb00c4618c7274de1d0b5cc0"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_1996.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "1996-09-01",
+    "end_date": "1997-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "fa51d43da75d255201733a3927b09034a280331778fe7d85a483e3bf54b2bf8c"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_1997.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "1997-09-01",
+    "end_date": "1998-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "d29c248f91d519ccf0658327b9171aab8bd0411caa5a64cae35888704359b17a"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_1997.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "1997-09-01",
+    "end_date": "1998-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "19a5d1973cc8892ab79150a2497cbe4bc89a9a67ea3cc0cb4462cbc92efd2e1f"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_1997.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "1997-09-01",
+    "end_date": "1998-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "12377e02f8eac688c506801e50b319104ca9a0a5889ca812ec4330608d1a5eda"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_1998.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "1998-09-01",
+    "end_date": "1999-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "bb0bdfe9120de1a31971f7b6ee7d04a8c784511cd6686d7f558358f3d04f79fa"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_1998.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "1998-09-01",
+    "end_date": "1999-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "0a7a1de46ee8cd5ec13726c1749cd629b659a6f98e5583e59ff5ef699962ee51"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_1998.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "1998-09-01",
+    "end_date": "1999-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "041fb16cdaa3ec1d5e56321b8d74e6f7dd2e70f33f162db29e2c89fb8e6fdcf2"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_1999.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "1999-09-01",
+    "end_date": "2000-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "4e11d6d75896b972cff285532154cb068344086e4372c22614168e369bd78740"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_1999.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "1999-09-01",
+    "end_date": "2000-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "d620ff406dd3cdee7d7db09faee55166654c66fd17c745edd82483635f770bac"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_1999.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "1999-09-01",
+    "end_date": "2000-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "a79dce55916e06c816b4e39c927d685376474a27fb939b89f9901020538090ce"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2000.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2000-09-01",
+    "end_date": "2001-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "458c62e083a8097d057ebd04d701601c5ba119425ebc8be51a3b4fe69b5b6ce7"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2000.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2000-09-01",
+    "end_date": "2001-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "8365047b7f417c3fd0810922878e78031d85e9a448b76e1ad0241e635905998f"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2000.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2000-09-01",
+    "end_date": "2001-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "500d190536d8dc1065244fd76bf47cf2516edb172891054557c7eab637aa818f"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2001.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2001-09-01",
+    "end_date": "2002-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "a0a764e09287d3f2c8a0080e04885e522afda75b9d85c7d2392f6f33d30efbbf"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2001.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2001-09-01",
+    "end_date": "2002-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "0e26995933df017f52db6dae58e646dd51c0c12bf088cce0159e763ee5aabd71"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2001.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2001-09-01",
+    "end_date": "2002-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "1569a5f35f71790f9901a044ae6e6d983e851e3540150a72089dffb484e0213c"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2002.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2002-09-01",
+    "end_date": "2003-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "d7f921968c37d2f79cc75de1dcb2ea0aeb5806ec44d8787bda8ea1c97c7ac845"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2002.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2002-09-01",
+    "end_date": "2003-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "f295213742853da33f59a4c278c995c638437bcf7915f87ec9b8249c7991e83a"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2002.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2002-09-01",
+    "end_date": "2003-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "8dadc88f35fe960f1305ccf11a70e5a131d87759fc5dcb8b00e960707c0fad45"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2003.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2003-09-01",
+    "end_date": "2004-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "48f89435bc927cf5425b3088d5abd458905bd2a09696e3ea7bcd3cb9f994e62b"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2003.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2003-09-01",
+    "end_date": "2004-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "59766d21cb7737e085a8f2d6d2039fa89ca1d7297a8e76c1b393d95bb88a9a78"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2003.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2003-09-01",
+    "end_date": "2004-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "c9bd271f5cdd2a4749947f3f7c0bad24b027a326cbeaf2f92e18e651819898d8"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2004.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2004-09-01",
+    "end_date": "2005-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "2fc0caa2c4713fd2a9db1561aa395a0192463a5e039302757bd119d66e0dc15e"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2004.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2004-09-01",
+    "end_date": "2005-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "c386623f55d69f0f5bc6477b8fb63ee1369ab0cc9ce56d5171fd717a48f24d90"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2004.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2004-09-01",
+    "end_date": "2005-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "8dd4eead1bc3de6bea3108a7db78c93ce6c27aeb4b79de1d151d229612078466"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2005.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2005-09-01",
+    "end_date": "2006-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "fe1afe74e5ad7a56fc34101dd33b0cbe0db0e195d38ee72704172561a7e92b73"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2005.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2005-09-01",
+    "end_date": "2006-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "f88fae274fcb249949d8681c14d1d11a1b108d1f1bbd454759401c3bfc3f52e9"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2005.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2005-09-01",
+    "end_date": "2006-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "6e19d3c088b82c08c3ea844f2342b4ce1755699a43f16fd6041d6ad707969980"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2006.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2006-09-01",
+    "end_date": "2007-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "eca7fa4966f65d775e70c8799088a5cc54980d5d67e11f4989d5bee149a8755f"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2006.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2006-09-01",
+    "end_date": "2007-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "6cbe55f12ce729bc91cbb8a81fa6e142c45d5dde27c446aa661745d3c8406174"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2006.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2006-09-01",
+    "end_date": "2007-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "bfcbc8af00bf5d6d10e0c947d425d6ec4d9319c804dfb4bf6dbdaab0323682b9"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2007.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2007-09-01",
+    "end_date": "2008-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "c4ac3f1ff1b9d18457c065b138ac7fd5bb9e158e11ed67a1bd56e1dbd6eab25b"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2007.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2007-09-01",
+    "end_date": "2008-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "dbcae967fcbec576908bd16f84b44bd1e4f757f932ca091e8f6d9033acd4069b"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2007.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2007-09-01",
+    "end_date": "2008-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "90d5161c5fb5034afef7cb79ac8060caa21ad61e7bd79f9b8030cfc8123b19d6"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2008.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2008-09-01",
+    "end_date": "2009-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "bc93a3fb073cb00068a87f61d4a42b16ea6c5eba6ec3a0e1513e68ce4cfd64b1"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2008.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2008-09-01",
+    "end_date": "2009-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "7a2c813c78c90a8de793fb3a4869fbfe83918314720b47c2d05960e3976173b1"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2008.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2008-09-01",
+    "end_date": "2009-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "4e109ca79172edfab7ff0d208fbe384c1419473e0308087ecf12173d80dd0f66"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2009.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2009-09-01",
+    "end_date": "2010-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "5ee73f331ea6f86abb17f75ff3d798ffa676183d021fa18a2823b4d00429d1f3"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2009.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2009-09-01",
+    "end_date": "2010-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "7cc148e1d50fcf90fc6c3d9dab27e5b7aa734f8008927e09c977ce19014cd0e1"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2009.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2009-09-01",
+    "end_date": "2010-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "50d4adbeb2c5d98d0eeca7656f5ff088dfbdf254a9f860d4c39953260dc13a7b"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2010.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2010-09-01",
+    "end_date": "2011-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "37c8f498774ca538f5afff9e1a18a247d1e4e52765e088949dda3d6dc4a46487"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2010.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2010-09-01",
+    "end_date": "2011-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "bdd415a2391d4a77ead9475359fc6b20bda9e4243070de288922c7068165e5b5"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2010.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2010-09-01",
+    "end_date": "2011-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "74c209f9dcb1f79ff58d6e0b4f0f01dc2734f354187a93eda00086213659a47f"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2011.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2011-09-01",
+    "end_date": "2012-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "a5775187ca90b40af48b4a670f98758807172e18bb327b4a3eaef9c2b4a73b58"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2011.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2011-09-01",
+    "end_date": "2012-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "3f7dd91158a0799fc23321093366f29ef7d97d3254c098367d1d353a210e0e38"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2011.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2011-09-01",
+    "end_date": "2012-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "36290f7c01c14a9fe419da235d61b96673e2864e4a24ad1f3df18356551587b0"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2012.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2012-09-01",
+    "end_date": "2013-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "2faf56dc9bb50a9b0ebfa44cdee2e14debff4bb3333fc8d05d379cffd5dfb0a2"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2012.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2012-09-01",
+    "end_date": "2013-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "8c57464aa616eebb491112e43e64803e66308732a2b18b6248064022e048335e"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2012.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2012-09-01",
+    "end_date": "2013-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "f44de0a028b4684d02a6be70dd0a73338e7a2f3b7240b42a59925ccfbe5ca08f"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2013.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2013-09-01",
+    "end_date": "2014-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "77f0d5431bbed981fa0bc619a32ff526e67e67bdd0fc9e2f643728adaa5e7327"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2013.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2013-09-01",
+    "end_date": "2014-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "3431287d5b299fb48cfbc2200d0d3c5c3f8ab89343bec65141a1d61f47eef87d"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2013.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2013-09-01",
+    "end_date": "2014-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "35ac5d13a9be3eca1f68be392d33fb7af7bf468f6fd45bd88c18d0c086508ffe"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2014.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2014-09-01",
+    "end_date": "2015-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "2124faf73445765facc7788886d50963e364e7bbd859ffffdf2062e7aa5f8e4e"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2014.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2014-09-01",
+    "end_date": "2015-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "9a0a8c87abcf65181821b470aad620c7d028c49ba86c95b844d5fa4ecf8ec3f6"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2014.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2014-09-01",
+    "end_date": "2015-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "cdbe5750a77aaeef86a7963ab714e4d4cbfb697db55645431c9c4055f3d7a420"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2015.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2015-09-01",
+    "end_date": "2016-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "3c3cf955876c887433f34d17fe154ff6cec01c8b170a1757307737310b5fa70a"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2015.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2015-09-01",
+    "end_date": "2016-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "09612a5755939077c7c9ed13f1fcfd24bc2c35e4c0b452a2390508eca30175ab"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2015.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2015-09-01",
+    "end_date": "2016-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "b1eca8660c19298089d22189bb41696367bd126f3d8903f4cb16185d8a1f4d0a"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2016.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2016-09-01",
+    "end_date": "2017-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "d1a62bf4ab47895125bddbdd07a990676c21f06c0ab75e3b6568062882b2f0b6"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2016.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2016-09-01",
+    "end_date": "2017-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "07be1f8c05fe57db87b3029f74b18112a609aa4004aa1da2db2f8ed8bd55d971"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2016.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2016-09-01",
+    "end_date": "2017-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "9bb7c5788b87cc38b5ae987ac0f1df93bc127683ebfa91a3fe76097462428b77"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2017.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2017-09-01",
+    "end_date": "2018-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "e4a4bc8030b8b4c274deca8d30a10b3b0d4835c18836725bad83e07729506d75"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2017.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2017-09-01",
+    "end_date": "2018-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "dc083e0d29f066079b82d7836a7745b3b1f3d5d09131a91a67c51e21e2de0a52"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2017.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2017-09-01",
+    "end_date": "2018-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "865dd804fade82f2f5f6ea6ded2bc3f9b7bae967ef67bf515685c306c3694a37"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2018.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2018-09-01",
+    "end_date": "2019-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "de4e95807164e75688e59a05fa0746e08e53155964778abcc076a128c0cb8514"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2018.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2018-09-01",
+    "end_date": "2019-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "95130f8d2ac7e4445f5a7c65cf2141f334285231b96f94f1c094ac1b476366ff"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2018.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2018-09-01",
+    "end_date": "2019-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "de729e95a540be66382f1adba8ff99e7ea77fce4d6a0a5d447885747a6ec6b31"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2019.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2019-09-01",
+    "end_date": "2020-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "e569001816a9649b02303901bd01f51eb9e5f5539566160cbda99846e721884a"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2019.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2019-09-01",
+    "end_date": "2020-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "308bcd0e2ca1e18e801da4389b17cef82cccb82522deaf8e650d7146c35d11cf"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2019.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2019-09-01",
+    "end_date": "2020-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "2192f416f3755db59a29c44f3e096922551d260bcbd1bb2799f568a39b2b21bd"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2020.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2020-09-01",
+    "end_date": "2021-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "38abdcb1b7b42c3d0ab3b80b3462d1abcf7ab1a4df28882c2caff962787f4351"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2020.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2020-09-01",
+    "end_date": "2021-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "ef65c3efe88943cbf4d78efde2deba3c9e62616e86a8c38f3a4c95ced26d2d00"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2020.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2020-09-01",
+    "end_date": "2021-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "10371b0f70eac73f464bec35348e859f7ad16416e087cf8df641ed0313673f43"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2021.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2021-09-01",
+    "end_date": "2022-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "bbc75e1e8846a9af18ae801a8b4ab6d30e8a1ca8ea1860bec9697d4263d1be36"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2021.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2021-09-01",
+    "end_date": "2022-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "3adfee3d0bc4970dfa577c80b4e95df21eb27c25041b73169a90fdb76a70702f"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2021.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2021-09-01",
+    "end_date": "2022-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "4523916cb1fb1769b773261c7475a48e70ce3202b4e64bf90af410f02fd82ae5"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_000_2022.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "15.2,15.2,15.2,15.2,15.2,15.5,15.5,15.5,15.5,15.5,15.5,15.8,15.8,15.8,15.8,15.8,15.8,14.0,14.0,14.0",
+    "longitude": "77.2,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.2,77.5,77.8,78.1,78.4,78.7,77.0,77.3,77.6",
+    "start_date": "2022-09-01",
+    "end_date": "2023-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "fe5e40a765cc781d3a39ba0bb6f038333ed3d1253b672c1262f10660f8c557a1"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_020_2022.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "14.0,14.0,14.3,14.3,14.3,14.3,14.3,14.6,14.6,14.6,14.6,14.9,14.9,14.9,14.9,13.0,13.3,13.3,13.3,13.6",
+    "longitude": "77.9,78.2,77.0,77.3,77.6,77.9,78.2,77.0,77.3,77.6,77.9,77.0,77.3,77.6,77.9,76.9,76.6,76.9,77.2,76.6",
+    "start_date": "2022-09-01",
+    "end_date": "2023-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "8a3570ea96fd86f443bb6476bbd89d208c69cf4fc419ca994989a6f0009d9cfd"
+  },
+  {
+   "file": "data\\drought2\\raw\\grid_040_2022.json",
+   "source": "https://archive-api.open-meteo.com/v1/archive",
+   "params": {
+    "latitude": "13.6,13.6,13.9,14.2,14.2",
+    "longitude": "76.9,77.2,76.9,77.2,77.5",
+    "start_date": "2022-09-01",
+    "end_date": "2023-04-30",
+    "daily": "soil_moisture_0_to_7cm_mean,soil_moisture_7_to_28cm_mean,soil_moisture_28_to_100cm_mean",
+    "models": "era5_land",
+    "timezone": "GMT"
+   },
+   "sha256": "6f041b313c710d75700741c2b27f7e2cc73960065191e9d6daffebb6b136a484"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "name": "Logistic regression (soil)",
+ "threshold": 0.6176220828647029,
+ "features": [
+  "area_last",
+  "area_15",
+  "area_30",
+  "pct_last",
+  "pct_chg15",
+  "pct_chg30",
+  "dd_so_far",
+  "doy",
+  "d_Kurnool",
+  "d_Anantapur",
+  "d_Tumkur"
+ ],
+ "kind": "model",
+ "train": [
+  1990,
+  2006
+ ],
+ "validation": [
+  2007,
+  2013
+ ],
+ "sha256": "3570f5f23b5f198b974471865b47fe0595929a03db02aa07615ac0078ceb2204"
+}

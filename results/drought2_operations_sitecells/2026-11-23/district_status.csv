@@ -1,0 +1,4 @@
+district,issue_date,input_cutoff,latest_soil_date,grid_points,scale,monitoring_status,forecast_status
+Kurnool,2026-11-23,2026-11-15,,2,"regional (0.3 deg grid, no cropland mask)",unavailable (incomplete soil inputs),unavailable
+Anantapur,2026-11-23,2026-11-15,,2,"regional (0.3 deg grid, no cropland mask)",unavailable (incomplete soil inputs),unavailable
+Tumkur,2026-11-23,2026-11-15,,1,"regional (0.3 deg grid, no cropland mask)",unavailable (incomplete soil inputs),unavailable

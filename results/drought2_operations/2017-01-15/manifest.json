@@ -1,0 +1,42 @@
+{
+ "issue_date": "2017-01-15",
+ "input_cutoff": "2017-01-07",
+ "updated": false,
+ "model": {
+  "name": "Logistic regression (combined)",
+  "threshold": 0.7776496008212388,
+  "features": [
+   "area_last",
+   "area_15",
+   "area_30",
+   "pct_last",
+   "pct_chg15",
+   "pct_chg30",
+   "dd_so_far",
+   "doy",
+   "rain30",
+   "rain60",
+   "rain_since_oct",
+   "rain_jun_nov_ratio",
+   "et0_30",
+   "d_Kurnool",
+   "d_Anantapur",
+   "d_Tumkur"
+  ],
+  "kind": "model",
+  "train": [
+   1990,
+   2006
+  ],
+  "validation": [
+   2007,
+   2013
+  ],
+  "sha256": "ab7569d11274117bafe6b73ac03a9b4524cf7fa0cd76cb1e66f26eeefb61951f"
+ },
+ "inputs": {
+  "district_grid.csv.gz": "fb2a8fd5b23f327062e16429e0035a1d07610eb6a45a04510bd89f23f0210dd6",
+  "reference_rz7.csv.gz": "6b323c3c64c1e2f415be2853a4a842fc97046d746912ba6c6d832039954d733a",
+  "forecast_15d.joblib": "ab7569d11274117bafe6b73ac03a9b4524cf7fa0cd76cb1e66f26eeefb61951f"
+ }
+}
