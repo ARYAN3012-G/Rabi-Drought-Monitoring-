@@ -1,0 +1,11 @@
+model,deficit_district_seasons,caught,warned_district_seasons,warned_with_correct,district_seasons
+Persistence (area last 15 d >= 0.5),5,4,5,4,27
+Climatology (district x calendar),5,5,27,5,27
+Conditional transition,5,5,5,5,27
+Logistic regression (soil),5,5,5,5,27
+XGBoost (soil),5,5,5,5,27
+Logistic regression (weather),5,3,3,3,27
+XGBoost (weather),5,2,2,2,27
+Logistic regression (combined),5,5,5,5,27
+XGBoost (combined),5,5,5,5,27
+ORACLE: XGBoost soil + future rain (not operational),5,5,5,5,27

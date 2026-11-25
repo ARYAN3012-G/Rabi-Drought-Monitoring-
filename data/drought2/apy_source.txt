@@ -1,0 +1,2 @@
+Ministry of Agriculture & Farmers Welfare, Crop Statistics (district x season x crop APY), via India Data Portal CKAN resource f980409d-49a2-42ae-9eb0-182365005c04, accessed 2026-11-23.
+sha256 fe10fbf129b3501bbb3d282c7600402a8ed7248c116f2cc9428bc2b573d1d4a9

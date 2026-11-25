@@ -1,0 +1,155 @@
+[
+  {
+    "horizon": 7,
+    "operating_point": "A. v5 Random forest, validation-selected (primary)",
+    "caught": 48,
+    "warned": 170,
+    "precision": 0.282,
+    "v5_rf_threshold_only": [
+      48,
+      161,
+      0.298
+    ],
+    "detect_v2_threshold_only": [
+      48,
+      135,
+      0.356
+    ]
+  },
+  {
+    "horizon": 7,
+    "operating_point": "B. + absolute veto rootzone<0.30 (friend v5, post-hoc)",
+    "caught": 37,
+    "warned": 89,
+    "precision": 0.416,
+    "v5_rf_threshold_only": [
+      37,
+      145,
+      0.255
+    ],
+    "detect_v2_threshold_only": [
+      37,
+      99,
+      0.374
+    ]
+  },
+  {
+    "horizon": 7,
+    "operating_point": "C. + soil-dry tag as filter (post-hoc)",
+    "caught": 30,
+    "warned": 63,
+    "precision": 0.476,
+    "v5_rf_threshold_only": [
+      29,
+      125,
+      0.232
+    ],
+    "detect_v2_threshold_only": [
+      30,
+      88,
+      0.341
+    ]
+  },
+  {
+    "horizon": 15,
+    "operating_point": "A. v5 Random forest, validation-selected (primary)",
+    "caught": 64,
+    "warned": 171,
+    "precision": 0.374,
+    "v5_rf_threshold_only": [
+      64,
+      169,
+      0.379
+    ],
+    "detect_v2_threshold_only": [
+      64,
+      165,
+      0.388
+    ]
+  },
+  {
+    "horizon": 15,
+    "operating_point": "B. + absolute veto rootzone<0.30 (friend v5, post-hoc)",
+    "caught": 52,
+    "warned": 97,
+    "precision": 0.536,
+    "v5_rf_threshold_only": [
+      52,
+      108,
+      0.481
+    ],
+    "detect_v2_threshold_only": [
+      52,
+      126,
+      0.413
+    ]
+  },
+  {
+    "horizon": 15,
+    "operating_point": "C. + soil-dry tag as filter (post-hoc)",
+    "caught": 41,
+    "warned": 72,
+    "precision": 0.569,
+    "v5_rf_threshold_only": [
+      41,
+      89,
+      0.461
+    ],
+    "detect_v2_threshold_only": [
+      41,
+      104,
+      0.394
+    ]
+  },
+  {
+    "horizon": 30,
+    "operating_point": "A. v5 Random forest, validation-selected (primary)",
+    "caught": 62,
+    "warned": 127,
+    "precision": 0.488,
+    "v5_rf_threshold_only": [
+      62,
+      128,
+      0.484
+    ],
+    "detect_v2_threshold_only": [
+      62,
+      140,
+      0.443
+    ]
+  },
+  {
+    "horizon": 30,
+    "operating_point": "B. + absolute veto rootzone<0.30 (friend v5, post-hoc)",
+    "caught": 48,
+    "warned": 69,
+    "precision": 0.696,
+    "v5_rf_threshold_only": [
+      48,
+      92,
+      0.522
+    ],
+    "detect_v2_threshold_only": [
+      48,
+      102,
+      0.471
+    ]
+  },
+  {
+    "horizon": 30,
+    "operating_point": "C. + soil-dry tag as filter (post-hoc)",
+    "caught": 40,
+    "warned": 57,
+    "precision": 0.702,
+    "v5_rf_threshold_only": [
+      40,
+      71,
+      0.563
+    ],
+    "detect_v2_threshold_only": [
+      40,
+      79,
+      0.506
+    ]
+  }
+]

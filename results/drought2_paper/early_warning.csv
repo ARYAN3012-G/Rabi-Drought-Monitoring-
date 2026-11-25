@@ -1,0 +1,22 @@
+issue,method,n,loss_seasons,auc,ci,warned,caught
+15 Dec,Soil deficit so far (DD),46,11,0.8,"[0.62, 0.95]",,
+15 Dec,Soil moisture at sowing (low = risk),46,11,0.77,"[0.58, 0.93]",,
+15 Dec,Soil percentile so far (low = risk),46,11,0.76,"[0.54, 0.93]",,
+15 Dec,Rain since June (low = risk),46,11,0.72,"[0.51, 0.89]",,
+15 Dec,SPEI so far (low = risk),46,11,0.6,"[0.36, 0.80]",,
+15 Dec,LOSO logistic: soil (DD so far + SOW),46,11,0.77,"[0.55, 0.94]",15.0,6.0
+15 Dec,LOSO logistic: rain + SPEI,46,11,0.64,"[0.44, 0.84]",23.0,8.0
+15 Jan,Soil deficit so far (DD),46,11,0.79,"[0.63, 0.95]",,
+15 Jan,Soil moisture at sowing (low = risk),46,11,0.77,"[0.58, 0.93]",,
+15 Jan,Soil percentile so far (low = risk),46,11,0.74,"[0.53, 0.93]",,
+15 Jan,Rain since June (low = risk),46,11,0.71,"[0.51, 0.88]",,
+15 Jan,SPEI so far (low = risk),46,11,0.64,"[0.41, 0.86]",,
+15 Jan,LOSO logistic: soil (DD so far + SOW),46,11,0.76,"[0.55, 0.93]",15.0,6.0
+15 Jan,LOSO logistic: rain + SPEI,46,11,0.65,"[0.45, 0.84]",24.0,8.0
+15 Feb,Soil deficit so far (DD),46,11,0.79,"[0.62, 0.95]",,
+15 Feb,Soil moisture at sowing (low = risk),46,11,0.77,"[0.58, 0.93]",,
+15 Feb,Soil percentile so far (low = risk),46,11,0.73,"[0.51, 0.92]",,
+15 Feb,Rain since June (low = risk),46,11,0.71,"[0.52, 0.88]",,
+15 Feb,SPEI so far (low = risk),46,11,0.65,"[0.44, 0.85]",,
+15 Feb,LOSO logistic: soil (DD so far + SOW),46,11,0.76,"[0.55, 0.93]",15.0,6.0
+15 Feb,LOSO logistic: rain + SPEI,46,11,0.64,"[0.44, 0.83]",23.0,8.0

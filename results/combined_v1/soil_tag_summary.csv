@@ -1,0 +1,7 @@
+horizon,soil_tag,warned,correct,precision
+7,soil-dry,63,30,0.476
+7,soil-wet,107,18,0.168
+15,soil-dry,72,41,0.569
+15,soil-wet,99,23,0.232
+30,soil-dry,57,40,0.702
+30,soil-wet,70,22,0.314

@@ -1,0 +1,53 @@
+[
+  {
+    "horizon": 7,
+    "selected_model": "Random forest",
+    "validation_ap": {
+      "Logistic regression": 0.08286063181325337,
+      "Random forest": 0.25905457760926875,
+      "XGBoost": 0.18074911420401346,
+      "Ensemble equal": 0.1914880475141505,
+      "Ensemble weighted": 0.20916692814601992
+    },
+    "thresholds": {
+      "all": 0.187502385590966,
+      "irr": 0.1896352083670028,
+      "rai": 0.177611099864428
+    },
+    "threshold_rule": "F0.5 on validation 2022, irrigated / rainfed (DETECT_v3)"
+  },
+  {
+    "horizon": 15,
+    "selected_model": "Ensemble weighted",
+    "validation_ap": {
+      "Logistic regression": 0.11183001177320309,
+      "Random forest": 0.32304620212839985,
+      "XGBoost": 0.3244333641653079,
+      "Ensemble equal": 0.3118477064762299,
+      "Ensemble weighted": 0.3396212417111446
+    },
+    "thresholds": {
+      "all": 0.5197709302332951,
+      "irr": 0.5045382046101509,
+      "rai": 0.45321114753018465
+    },
+    "threshold_rule": "F0.5 on validation 2022, irrigated / rainfed (DETECT_v3)"
+  },
+  {
+    "horizon": 30,
+    "selected_model": "Random forest",
+    "validation_ap": {
+      "Logistic regression": 0.19466294395954173,
+      "Random forest": 0.4332842274980522,
+      "XGBoost": 0.39153766557013336,
+      "Ensemble equal": 0.3959895563072828,
+      "Ensemble weighted": 0.40334836518231326
+    },
+    "thresholds": {
+      "all": 0.3930612594951657,
+      "irr": 0.40170892935153707,
+      "rai": 0.3310527556846527
+    },
+    "threshold_rule": "F0.5 on validation 2022, irrigated / rainfed (DETECT_v3)"
+  }
+]
